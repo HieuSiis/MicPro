@@ -3,7 +3,6 @@ import React from 'react'
 
 import { CheckBgOrange } from 'assets/icons/sport-page'
 import { ImgRight } from 'assets/images/sport-page'
-import Heading from 'components/ui/Heading'
 
 const lists = [
   { icon: CheckBgOrange, content: 'Powered by GPT-3 from OpenAI' },

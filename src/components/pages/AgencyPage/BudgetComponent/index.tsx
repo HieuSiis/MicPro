@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 
 import { CheckGradientPurple } from 'assets/icons/check-icons'
-import RadiusButton from 'components/ui/Button/RadiusButton'
 import Heading from 'components/ui/Heading'
 
 const plans = [
@@ -39,10 +38,16 @@ const BudgetComponent = () => {
         Find the plan that fits your <span className='text-primary'>budget</span>
       </Heading>
       <div className='mb-10 flex items-center justify-center gap-3'>
-        <button className='rounded-full bg-primary px-[27px] py-[10px] font-poppins text-sm font-normal text-white'>
+        <button
+          type='button'
+          className='rounded-full bg-primary px-[27px] py-[10px] font-poppins text-sm font-normal text-white'
+        >
           Monthly
         </button>
-        <button className='rounded-full bg-stone-50 px-[33px] py-[10px] font-poppins text-sm font-normal text-dark1'>
+        <button
+          type='button'
+          className='rounded-full bg-stone-50 px-[33px] py-[10px] font-poppins text-sm font-normal text-dark1'
+        >
           Yearly
         </button>
       </div>
@@ -56,13 +61,11 @@ const BudgetComponent = () => {
               <div className='mb-3 flex items-center justify-between'>
                 <h5 className='font-poppins font-semibold'>{plan.name}</h5>
                 <span
-                  className={`flex items-center justify-center rounded-full px-6 py-3 
-                                    ${
-                                      plan.isPopular
-                                        ? 'bg-primary bg-opacity-10 text-primary'
-                                        : 'bg-dark1 bg-opacity-10 text-gray-950'
-                                    }
-                                    font-poppins font-medium`}
+                  className={`flex items-center justify-center rounded-full px-6 py-3 ${
+                    plan.isPopular
+                      ? 'bg-primary bg-opacity-10 text-primary'
+                      : 'bg-dark1 bg-opacity-10 text-gray-950'
+                  }font-poppins font-medium`}
                 >
                   {plan.tag}
                 </span>
@@ -91,12 +94,18 @@ const BudgetComponent = () => {
               </div>
               {plan.isFree ? (
                 <div className='mt-11 w-fit rounded-full bg-gradientButton p-[1px]'>
-                  <button className='rounded-full bg-grayEa px-9 py-[10px] font-poppins text-[16px] font-medium text-gray-950'>
+                  <button
+                    type='button'
+                    className='rounded-full bg-grayEa px-9 py-[10px] font-poppins text-[16px] font-medium text-gray-950'
+                  >
                     Buy Now
                   </button>
                 </div>
               ) : (
-                <button className='rounded-full bg-gradientButton px-9 py-[10px] font-poppins text-lg font-medium text-white'>
+                <button
+                  type='button'
+                  className='rounded-full bg-gradientButton px-9 py-[10px] font-poppins text-lg font-medium text-white'
+                >
                   Buy Now
                 </button>
               )}

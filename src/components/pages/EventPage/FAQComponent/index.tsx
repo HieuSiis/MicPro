@@ -51,6 +51,7 @@ const FAQComponent = () => {
               }`}
             >
               <button
+                type='button'
                 className={`flex w-full justify-between px-6 py-6  font-poppins text-lg transition-all duration-300 sm:px-10 sm:py-[26px] sm:font-sora sm:text-[28px] ${
                   openIndex === index ? 'text-white' : 'text-dark'
                 }`}

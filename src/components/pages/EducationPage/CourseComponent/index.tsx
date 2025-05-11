@@ -64,8 +64,8 @@ const CourseComponent = () => {
                   <div className='flex gap-1'>
                     {Array(5)
                       .fill(0)
-                      .map((item, index) => (
-                        <div key={index} className='text-xs text-starYellow'>
+                      .map((itm, i) => (
+                        <div key={i} className='text-xs text-starYellow'>
                           <StarFilled />
                         </div>
                       ))}

@@ -33,7 +33,9 @@ const CtaComponent = () => {
               placeholder='Your email address'
               className='w-[116px] font-poppins text-xs font-normal focus:outline-none sm:w-[128px] sm:font-inter sm:text-sm sm:font-medium'
             />
-            <button className='rounded-[4px] bg-primary p-[11px] font-inter text-sm font-semibold text-white sm:p-5'>
+            <button
+              type='button'
+              className='rounded-[4px] bg-primary p-[11px] font-inter text-sm font-semibold text-white sm:p-5'>
               Subscribe
             </button>
           </div>

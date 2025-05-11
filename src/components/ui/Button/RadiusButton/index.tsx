@@ -8,6 +8,7 @@ type ButtonProps = {
 const RadiusButton = ({ children, className = '', ...rest }: ButtonProps) => {
   return (
     <button
+      type='button'
       className={twMerge(
         'flex items-center justify-center gap-2.5 rounded-full px-[50px] py-[18px] font-poppins text-base font-medium',
         className

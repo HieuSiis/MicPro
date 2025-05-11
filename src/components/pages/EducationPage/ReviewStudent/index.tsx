@@ -44,8 +44,8 @@ const ReviewStudent = () => {
               <div className='mb-[30px] flex gap-1'>
                 {Array(5)
                   .fill(0)
-                  .map((item, index) => (
-                    <div key={index} className='mt-1 text-sm text-starYellow'>
+                  .map((itm, idx) => (
+                    <div key={idx} className='mt-1 text-sm text-starYellow'>
                       <StarFilled />
                     </div>
                   ))}

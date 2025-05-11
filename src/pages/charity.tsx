@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import CharityPage from 'components/pages/CharityPage'
 import SEOHead from 'components/seo'
 
-export default function Charity() {
+const Charity = () => {
   return (
     <div className='relative'>
       <SEOHead title='Charity' />
@@ -18,3 +18,5 @@ export default function Charity() {
     </div>
   )
 }
+
+export default Charity

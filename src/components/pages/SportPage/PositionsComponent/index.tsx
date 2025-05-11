@@ -80,7 +80,9 @@ const PositionsComponent = () => {
         {/* Right Boxes */}
         <div className='flex flex-col justify-center gap-6'>
           {boxesRight.map((item, index) => (
-            <div className={`${item.bgBox} max-w-[370px] rounded-lg p-6 text-left shadow-sm`}>
+            <div
+              key={index}
+              className={`${item.bgBox} max-w-[370px] rounded-lg p-6 text-left shadow-sm`}>
               <h3 className={`${item.colorTitle} mb-3 font-sora text-xl font-semibold`}>
                 {item.title}
               </h3>

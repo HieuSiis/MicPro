@@ -40,7 +40,9 @@ const EventCard = () => {
             <p className='mb-[26px] font-poppins text-[16px] font-normal text-white'>
               {item.description}
             </p>
-            <button className='mb-4 rounded-full bg-white px-[50px] py-3 font-poppins text-base font-medium text-primary'>
+            <button
+              type='button'
+              className='mb-4 rounded-full bg-white px-[50px] py-3 font-poppins text-base font-medium text-primary'>
               Get Ticket
             </button>
 

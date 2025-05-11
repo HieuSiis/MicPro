@@ -49,7 +49,10 @@ const SpecialistComponent = () => {
             <Image src={item.img} alt='' className='rounded-[10px] bg-slate-50' />
             <h5 className='mt-[15px] font-sora text-xl font-semibold'>{item.name}</h5>
             <div className='flex gap-[14px] py-5'>
-              <button className='rounded-[10px] bg-slate-50 px-5 py-[10px] font-poppins text-sm text-blue-600'>
+              <button
+                type='button'
+                className='rounded-[10px] bg-slate-50 px-5 py-[10px] font-poppins text-sm text-blue-600'
+              >
                 {item.position}
               </button>
               <div className='flex items-center gap-1'>

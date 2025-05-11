@@ -51,6 +51,7 @@ const FAQComponent = () => {
             }`}
           >
             <button
+              type='button'
               className='flex w-full items-center justify-between px-5 py-4 text-left font-sora text-lg font-semibold text-dark sm:px-[33px] sm:text-xl  '
               onClick={() => toggleFAQ(index)}
             >

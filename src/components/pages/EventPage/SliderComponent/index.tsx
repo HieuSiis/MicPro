@@ -3,7 +3,7 @@ import { Carousel } from 'antd'
 import Image from 'next/image'
 import React from 'react'
 
-import { Amazon, Avatar, Group } from 'assets/images/event-page'
+import { Amazon, Avatar } from 'assets/images/event-page'
 
 const SliderComponent = () => {
   return (
@@ -12,21 +12,23 @@ const SliderComponent = () => {
         {Array(3)
           .fill(0)
           .map((item, index) => (
-            <div className='rounded-[20px] bg-gradientCarousel px-6 py-[30px] sm:p-[70px]'>
+            <div
+              key={index}
+              className='rounded-[20px] bg-gradientCarousel px-6 py-[30px] sm:p-[70px]'>
               <h3 className='mx-auto mb-[26px] text-center font-sora text-xl font-bold text-white sm:mb-[60px] sm:text-[34px]'>
                 CUSTOMER STORY
               </h3>
               <div className='flex flex-col-reverse gap-6 sm:flex-row sm:gap-[188px]'>
                 <h4 className='max-w-[591px] font-sora text-lg font-bold text-white sm:text-[28px]'>
-                  "We used Backstage to organize our second anniversary. It helped us gather more
-                  than 450 guests to celebrate this event with us."
+                  &quot;We used Backstage to organize our second anniversary. It helped us gather more
+                  than 450 guests to celebrate this event with us.&quot;
                 </h4>
                 <div className='flex gap-[87px]'>
                   <div className='flex justify-center gap-1 sm:hidden'>
                     {Array(5)
                       .fill(0)
-                      .map((item, index) => (
-                        <div key={index} className='mt-1 text-[19px] text-orange-300'>
+                      .map((itm, idx) => (
+                        <div key={idx} className='mt-1 text-[19px] text-orange-300'>
                           <StarFilled />
                         </div>
                       ))}
@@ -55,8 +57,8 @@ const SliderComponent = () => {
                 <div className='hidden justify-center gap-2 sm:flex'>
                   {Array(5)
                     .fill(0)
-                    .map((item, index) => (
-                      <div key={index} className='mt-1 text-[29px] text-orange-300'>
+                    .map((itm, idx) => (
+                      <div key={idx} className='mt-1 text-[29px] text-orange-300'>
                         <StarFilled />
                       </div>
                     ))}

@@ -2,7 +2,6 @@ import { Carousel } from 'antd'
 import Image from 'next/image'
 import React from 'react'
 
-import { Group } from 'assets/icons'
 import Img from 'assets/images/ecommerce-page/slider.png'
 
 const SliderComponent = () => {

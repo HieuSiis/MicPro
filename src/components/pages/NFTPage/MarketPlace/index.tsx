@@ -101,6 +101,7 @@ const MarketPlace = () => {
   }, [])
 
   // Depending on the device and "see more" status, display the appropriate number of items
+  // eslint-disable-next-line no-nested-ternary
   const visibleItems = showAll ? cards : isMobile ? cards.slice(0, 1) : cards.slice(0, 6)
   return (
     <section className='main-container'>
@@ -114,7 +115,8 @@ const MarketPlace = () => {
         {!showAll && (
           <>
             {/* Desktop Button */}
-            <div
+            <button
+              type='button'
               onClick={() => setShowAll(true)}
               className='hidden cursor-pointer gap-[10px] sm:flex'
             >
@@ -122,7 +124,7 @@ const MarketPlace = () => {
               <div className='flex items-center justify-center'>
                 <img src={Arrow} alt='' />
               </div>
-            </div>
+            </button>
           </>
         )}
       </div>
@@ -131,6 +133,7 @@ const MarketPlace = () => {
         {categories.map((category, index) => {
           return (
             <button
+              type='button'
               key={index}
               className='whitespace-nowrap rounded-full border border-zinc-100 bg-white px-5 py-3 font-poppins text-sm font-medium text-neutral-800
                              hover:border-transparent hover:bg-blue-600 hover:text-white sm:px-[30px] sm:py-[18px] sm:text-base'
@@ -149,7 +152,9 @@ const MarketPlace = () => {
                 alt={card.title}
                 className='h-[330px] w-[330px] object-cover'
               />
-              <button className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-neutral-800 bg-opacity-90 px-[30px] py-[10px] font-poppins text-[16px] font-medium text-white opacity-0 transition group-hover:opacity-100'>
+              <button
+                type='button'
+                className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-neutral-800 bg-opacity-90 px-[30px] py-[10px] font-poppins text-[16px] font-medium text-white opacity-0 transition group-hover:opacity-100'>
                 View Now
               </button>
               <div className='absolute bottom-[22px] left-[18px] flex -space-x-2'>
@@ -188,7 +193,8 @@ const MarketPlace = () => {
       {!showAll && (
         <>
           {/* Mobile Button */}
-          <div
+          <button
+            type='button'
             onClick={() => setShowAll(true)}
             className='mt-6 flex cursor-pointer justify-center gap-[10px] sm:hidden'
           >
@@ -196,7 +202,7 @@ const MarketPlace = () => {
             <div className='flex items-center justify-center'>
               <img src={Arrow} alt='' />
             </div>
-          </div>
+          </button>
         </>
       )}
     </section>

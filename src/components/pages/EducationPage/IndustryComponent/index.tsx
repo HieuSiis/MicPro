@@ -44,7 +44,7 @@ const IndustryComponent = () => {
           </p>
           <div className='grid grid-cols-2 py-10'>
             {Items.map((item, index) => (
-              <div className='mb-[30px] flex'>
+              <div key={index} className='mb-[30px] flex'>
                 <Image src={item.icon} alt='' width={20} height={20} />
                 <span className='ml-3 font-poppins text-base font-semibold'>{item.title}</span>
               </div>

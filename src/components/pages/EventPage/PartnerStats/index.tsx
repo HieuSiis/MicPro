@@ -38,12 +38,14 @@ const PartnerStats = () => {
       <div className='main-container'>
         <div className='flex flex-wrap items-center justify-center gap-x-8 gap-y-[29px] py-12 sm:gap-[70px] sm:py-20 '>
           {logolist.map((item, index) => (
-            <img src={item} alt='' className='h-[29px] sm:h-auto' />
+            <img key={index} src={item} alt='' className='h-[29px] sm:h-auto' />
           ))}
         </div>
         <div className='flex flex-col items-center justify-center gap-[30px] py-10 sm:flex-row sm:py-20'>
           {stats.map((item, index) => (
-            <div className='rounded-2xl border border-slate-100 px-11 py-[30px] hover:shadow-md'>
+            <div
+              key={index}
+              className='rounded-2xl border border-slate-100 px-11 py-[30px] hover:shadow-md'>
               <div
                 className={`mb-5 flex h-20 w-20 items-center justify-center rounded-[10px] ${item.bgIcon}`}
               >

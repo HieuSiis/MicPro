@@ -97,8 +97,8 @@ const FeedbackComponent = () => {
                 <div className='flex gap-1'>
                   {Array(5)
                     .fill(0)
-                    .map((item, index) => (
-                      <div key={index} className='text-base text-starYellow'>
+                    .map((itm, idx) => (
+                      <div key={idx} className='text-base text-starYellow'>
                         <StarFilled />
                       </div>
                     ))}

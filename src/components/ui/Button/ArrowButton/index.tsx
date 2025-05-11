@@ -11,6 +11,7 @@ type ButtonProps = {
 const ArrowButton = ({ children, className = '', ...rest }: ButtonProps) => {
   return (
     <button
+      type='button'
       className={twMerge(
         'flex items-center rounded-lg bg-white p-4 text-lg font-semibold text-dark',
         className

@@ -38,7 +38,9 @@ const FeatureComponent = () => {
             <p className='mb-8 max-w-[302px] font-poppins text-xl font-normal text-gray-500'>
               {item.description}
             </p>
-            <button className='rounded-md border bg-white px-9 py-4 font-manrope text-lg font-semibold text-black hover:bg-primary hover:text-white'>
+            <button
+              type='button'
+              className='rounded-md border bg-white px-9 py-4 font-manrope text-lg font-semibold text-black hover:bg-primary hover:text-white'>
               Learn More
             </button>
           </div>

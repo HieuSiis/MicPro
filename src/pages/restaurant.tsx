@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import RestaurantPage from 'components/pages/RestaurantPage'
 import SEOHead from 'components/seo'
 
-export default function Restaurant() {
+const Restaurant = () => {
   return (
     <div className='relative'>
       <SEOHead title='Restaurant' />
@@ -18,3 +18,4 @@ export default function Restaurant() {
     </div>
   )
 }
+export default Restaurant

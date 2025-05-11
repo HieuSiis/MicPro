@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import EducationPage from 'components/pages/EducationPage'
 import SEOHead from 'components/seo'
 
-export default function Education() {
+const Education = () => {
   return (
     <div className='relative'>
       <SEOHead title='Education' />
@@ -18,3 +18,4 @@ export default function Education() {
     </div>
   )
 }
+export default Education

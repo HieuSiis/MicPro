@@ -20,7 +20,9 @@ const ProductsComponent = () => {
         <h1 className='font-sora text-[28px] font-bold leading-tight sm:text-[50px]'>
           Popular <span className='text-primary'>Products</span>
         </h1>
-        <button className='hidden items-center rounded-lg bg-primary px-6 py-[14px] text-base font-medium text-white sm:flex'>
+        <button
+          type='button'
+          className='hidden items-center rounded-lg bg-primary px-6 py-[14px] text-base font-medium text-white sm:flex'>
           See all Products
           <Image className='ml-[10px]' src={Arrow} alt='arrow' width={24} height={24} />
         </button>
@@ -55,7 +57,9 @@ const ProductsComponent = () => {
                   </span>
                 </div>
               </div>
-              <button className='rounded-[4px] bg-primary px-5 py-1 font-poppins text-base font-medium text-white'>
+              <button
+                type='button'
+                className='rounded-[4px] bg-primary px-5 py-1 font-poppins text-base font-medium text-white'>
                 BUY
               </button>
             </div>
@@ -93,7 +97,9 @@ const ProductsComponent = () => {
                   </span>
                 </div>
               </div>
-              <button className='rounded-[4px] bg-primary px-5 py-1 font-poppins text-base font-medium text-white'>
+              <button
+                type='button'
+                className='rounded-[4px] bg-primary px-5 py-1 font-poppins text-base font-medium text-white'>
                 BUY
               </button>
             </div>

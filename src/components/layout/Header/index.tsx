@@ -35,7 +35,6 @@ const menuLinks = [
 const Header = () => {
   const router = useRouter()
   const [menuOpen, setMenuOpen] = useState(false)
-  const [showMenu, setShowMenu] = useState(false)
   useEffect(() => {
     if (menuOpen) {
       document.body.classList.add('overflow-hidden')
@@ -61,7 +60,12 @@ const Header = () => {
         </Link>
 
         {/* Menu icon - chỉ hiện trên mobile */}
-        <button className='lg:hidden' onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          type='button'
+          className='lg:hidden'
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label='Toggle menu'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'
@@ -93,7 +97,10 @@ const Header = () => {
         </ul>
 
         {/* Desktop Button */}
-        <button className='hidden rounded-full bg-blue-600 px-[50px] py-[18px] font-medium leading-normal text-white sm:block'>
+        <button
+          type='button'
+          className='hidden rounded-full bg-blue-600 px-[50px] py-[18px] font-medium leading-normal text-white sm:block'
+        >
           Start a Project
         </button>
       </div>
@@ -127,7 +134,10 @@ const Header = () => {
                   </li>
                 )
               })}
-              <button className='z-10 mt-10 w-full rounded-full bg-blue-600 px-5 py-3 font-medium text-white'>
+              <button
+                type='button'
+                className='z-10 mt-10 w-full rounded-full bg-blue-600 px-5 py-3 font-medium text-white'
+              >
                 Start a Project
               </button>
             </ul>

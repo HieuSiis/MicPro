@@ -49,7 +49,9 @@ const ServiceComponent = () => {
             <p className='max-w-[215px] font-poppins text-base font-normal leading-6 text-dark1'>
               {item.description}
             </p>
-            <button className='mt-4 flex justify-center gap-1 font-inter text-base font-semibold'>
+            <button
+              type='button'
+              className='mt-4 flex justify-center gap-1 font-inter text-base font-semibold'>
               Learn More <img src={IArrow} alt='' />
             </button>
           </div>

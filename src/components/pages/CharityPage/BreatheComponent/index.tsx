@@ -22,7 +22,7 @@ const BreatheComponent = () => {
   return (
     <section className=' mt-[60px] w-full bg-white py-[60px] sm:mt-[100px] sm:py-[120px]'>
       <Heading className='max-w-[278px] sm:max-w-[757px]'>
-        We're here to help our Earth <span className='text-primary'>breathe</span> again.
+        Were here to help our Earth <span className='text-primary'>breathe</span> again.
       </Heading>
       <p className='mx-auto mt-6 max-w-[311px] text-center font-dmSans text-lg font-normal text-dark1 sm:max-w-[555px]'>
         Voluptatem accusantium doloremque laud totam rem aperiam, eaque ipsa quae ab illoaperiam,

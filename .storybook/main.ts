@@ -30,6 +30,7 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
+  // eslint-disable-next-line @typescript-eslint/no-shadow
   webpackFinal: async (config: any) => {
     config.resolve.plugins = [
       ...(config.resolve.plugins || []),

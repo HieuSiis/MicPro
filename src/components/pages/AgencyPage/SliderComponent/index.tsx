@@ -2,7 +2,7 @@ import { Carousel } from 'antd'
 import Image from 'next/image'
 import React from 'react'
 
-import { DoubleQuote, Group } from 'assets/icons'
+import { DoubleQuote } from 'assets/icons'
 import { ImgSlider } from 'assets/images/agency-page'
 
 const SliderComponent = () => {

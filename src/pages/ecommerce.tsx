@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import EcommercePage from 'components/pages/EcommercePage'
 import SEOHead from 'components/seo'
 
-export default function Ecommerce() {
+const Ecommerce = () => {
   return (
     <div className='relative'>
       <SEOHead title='Ecommerce' />
@@ -18,3 +18,5 @@ export default function Ecommerce() {
     </div>
   )
 }
+
+export default Ecommerce

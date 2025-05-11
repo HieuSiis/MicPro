@@ -68,8 +68,8 @@ const TeamComponent = () => {
                 <h4 className='font-poppins text-xl font-semibold'>{item.name}</h4>
                 <p className='text-sm'>{item.role}</p>
                 <div className='mt-5 flex space-x-2'>
-                  {item.icon.map((item, index) => (
-                    <img key={index} src={item} alt='' />
+                  {item.icon.map((itm, idx) => (
+                    <img key={idx} src={itm} alt='' />
                   ))}
                 </div>
               </div>

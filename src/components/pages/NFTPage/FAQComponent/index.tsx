@@ -48,6 +48,7 @@ const FAQComponent = () => {
               className='break-inside-avoid rounded-xl border border-violet-50 bg-white px-4 py-5 shadow-sm transition-all duration-300 sm:px-6 sm:py-8'
             >
               <button
+                type='button'
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 className='flex w-full items-start gap-4 text-left'
               >

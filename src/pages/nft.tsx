@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import NFTPage from 'components/pages/NFTPage'
 import SEOHead from 'components/seo'
 
-export default function NFT() {
+const NFT = () => {
   return (
     <div className='relative'>
       <SEOHead title='NFT' />
@@ -17,3 +17,4 @@ export default function NFT() {
     </div>
   )
 }
+export default NFT

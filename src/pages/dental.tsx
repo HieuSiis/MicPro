@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import DentalPage from 'components/pages/DentalPage'
 import SEOHead from 'components/seo'
 
-export default function Dental() {
+const Dental = () => {
   return (
     <div className='relative'>
       <SEOHead title='Dental' />
@@ -16,3 +16,5 @@ export default function Dental() {
     </div>
   )
 }
+
+export default Dental

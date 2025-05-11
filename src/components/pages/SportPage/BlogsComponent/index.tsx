@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { RightOutlined } from '@ant-design/icons'
 import { Carousel } from 'antd'
 import React, { useEffect, useState } from 'react'
 
-import PagDots from 'assets/icons/icon-dots-restaurant.svg'
 import Heading from 'components/ui/Heading'
 
 const cards = [
@@ -90,9 +90,9 @@ const BlogsComponent = () => {
         {slides.map((group, index) => (
           <div key={index} className='flex items-center justify-center'>
             <div className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
-              {group.map((card, index) => (
+              {group.map((card, idx) => (
                 <div
-                  key={index}
+                  key={idx}
                   className={`${card.bg} rounded-[20px] p-[18px] transition-transform hover:scale-95 sm:px-[64px] sm:py-[47px]`}
                 >
                   <div className='max-w-[291px] rounded-[20px] bg-white p-5 shadow-sm sm:max-w-[372px] sm:p-[30px]'>

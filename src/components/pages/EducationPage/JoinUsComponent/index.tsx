@@ -16,7 +16,9 @@ const JoinUsComponent = () => {
           <p className='mb-[18px] max-w-[357px] font-poppins text-base font-normal text-dark1 sm:mb-10'>
             Fuel your company’s growth with real-time customer insights.
           </p>
-          <button className='w-fit rounded-md bg-blue-600 px-10 py-4 text-white transition hover:bg-blue-700'>
+          <button
+            type='button'
+            className='w-fit rounded-md bg-blue-600 px-10 py-4 text-white transition hover:bg-blue-700'>
             Get Started
           </button>
         </div>

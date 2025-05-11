@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import EventPage from 'components/pages/EventPage'
 import SEOHead from 'components/seo'
 
-export default function Event() {
+const Event = () => {
   return (
     <div className='relative'>
       <SEOHead title='Event' />
@@ -18,3 +18,4 @@ export default function Event() {
     </div>
   )
 }
+export default Event

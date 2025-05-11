@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
@@ -65,7 +66,9 @@ const CollectionsComponent = () => {
             >
               <div className='relative'>
                 <Image src={item.img} alt='NFT Image' className='h-[330px] w-[330px] rounded-xl' />
-                <button className='absolute right-4 top-4 rounded-full bg-white p-[12px] shadow-md'>
+                <button
+                  type='button'
+                  className='absolute right-4 top-4 rounded-full bg-white p-[12px] shadow-md'>
                   {item.favorite ? <img src={HeartRed} alt='' /> : <img src={HeartGray} alt='' />}
                 </button>
               </div>
@@ -110,7 +113,8 @@ const CollectionsComponent = () => {
             </RadiusButton>
 
             {/* Mobile Button */}
-            <div
+            <button
+              type='button'
               onClick={() => setShowAll(true)}
               className='mt-6 flex cursor-pointer justify-center gap-[10px] sm:hidden'
             >
@@ -118,7 +122,7 @@ const CollectionsComponent = () => {
               <div className='flex items-center justify-center'>
                 <img src={Arrow} alt='' />
               </div>
-            </div>
+            </button>
           </>
         )}
       </div>

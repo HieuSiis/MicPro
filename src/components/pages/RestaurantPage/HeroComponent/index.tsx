@@ -15,10 +15,10 @@ const HeroComponent = () => {
           are providing the best food delivery services.
         </div>
         <div className='mb-[42px] mt-[30px] flex flex-col items-center justify-center gap-[10px] sm:mb-[76px] sm:mt-[70px] sm:flex-row sm:gap-6'>
-          <button>
+          <button type='button'>
             <Image src={GgPlay} alt='' />
           </button>
-          <button>
+          <button type='button'>
             <Image src={AppStore} alt='' />
           </button>
         </div>

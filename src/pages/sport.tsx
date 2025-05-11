@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import SportPage from 'components/pages/SportPage'
 import SEOHead from 'components/seo'
 
-export default function Sport() {
+const Sport = () => {
   return (
     <div className='relative'>
       <SEOHead title='Sport' />
@@ -18,3 +18,4 @@ export default function Sport() {
     </div>
   )
 }
+export default Sport

@@ -41,7 +41,9 @@ const BlogComponent = () => {
           <p className='mx-auto max-w-[289px] text-center font-poppins text-base font-normal text-dark1 sm:max-w-[411px] sm:text-left'>
             Eat the food you dream about at affordable prices. No need to come to us just call is.
           </p>
-          <button className=' mx-auto mt-6 flex justify-center rounded-lg bg-primary px-11 py-[18px] text-white sm:mx-0 sm:mt-11'>
+          <button
+            type='button'
+            className=' mx-auto mt-6 flex justify-center rounded-lg bg-primary px-11 py-[18px] text-white sm:mx-0 sm:mt-11'>
             Learn More <Image className='ml-[10px]' src={Arrow} alt='' width={24} height={24} />
           </button>
         </div>

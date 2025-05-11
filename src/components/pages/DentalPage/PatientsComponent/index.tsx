@@ -57,8 +57,8 @@ const PatientsComponent = () => {
               <div className='mb-[15px] mt-5 flex gap-3 sm:mb-[30px] sm:mt-10'>
                 {Array(5)
                   .fill(0)
-                  .map((item, index) => (
-                    <div key={index} className='text-xl text-starYellow'>
+                  .map((itm, idx) => (
+                    <div key={idx} className='text-xl text-starYellow'>
                       <StarFilled />
                     </div>
                   ))}

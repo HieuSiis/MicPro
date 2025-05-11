@@ -13,12 +13,14 @@ const TestimonialComponent = () => {
         <div className='flex-1 bg-gray-50 p-10'>
           <p className='mb-4 font-poppins text-base font-normal text-blue-600'>Testimonial</p>
           <h2 className='mb-3 font-sora text-xl font-bold leading-snug sm:mb-4 sm:text-[28px]'>
-            Trusted by the world's most customer-centric teams
+            Trusted by the world&apos;s most customer-centric teams
           </h2>
           <p className='mb-[26px] max-w-[363px] font-poppins text-sm font-normal text-dark1 sm:mb-11 sm:text-base'>
             Fuel your company’s growth with real-time customer insights.
           </p>
-          <button className='rounded-md bg-blue-600 px-10 py-4 text-white transition hover:bg-blue-700'>
+          <button
+            type='button'
+            className='rounded-md bg-blue-600 px-10 py-4 text-white transition hover:bg-blue-700'>
             Read More
           </button>
         </div>

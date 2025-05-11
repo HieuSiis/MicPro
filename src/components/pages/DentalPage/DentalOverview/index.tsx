@@ -61,11 +61,11 @@ const DentalOverview = () => {
               </p>
 
               <div className='flex flex-col gap-[18px] py-[30px] sm:py-[50px]'>
-                {item.lists.map((item, index) => (
-                  <div key={index} className='flex gap-[10px]'>
-                    <img src={item.icon} alt='' />
+                {item.lists.map((itm, idx) => (
+                  <div key={idx} className='flex gap-[10px]'>
+                    <img src={itm.icon} alt='' />
                     <p className='font-poppins group-odd:text-sm group-odd:font-normal group-odd:text-dark1 group-even:text-sm group-even:font-normal group-even:text-dark sm:group-odd:text-lg sm:group-even:text-xl sm:group-even:font-semibold'>
-                      {item.description}
+                      {itm.description}
                     </p>
                   </div>
                 ))}

@@ -3,7 +3,6 @@ import { Carousel } from 'antd'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-import { PagDots } from 'assets/icons'
 import { Elmo, Yaron } from 'assets/images/restaurant-page'
 import Heading from 'components/ui/Heading'
 
@@ -102,8 +101,8 @@ const ClientsComponent = () => {
                   <div className='ml-auto flex gap-1'>
                     {Array(5)
                       .fill(0)
-                      .map((item, index) => (
-                        <div key={index} className='mt-1 text-sm font-light text-starYellow'>
+                      .map((itm, i) => (
+                        <div key={i} className='mt-1 text-sm font-light text-starYellow'>
                           <StarFilled />
                         </div>
                       ))}

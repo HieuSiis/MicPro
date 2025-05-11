@@ -2,7 +2,7 @@ import Layout from 'components/layout/Layout'
 import AIPage from 'components/pages/AIPage'
 import SEOHead from 'components/seo'
 
-export default function AI() {
+const AI = () => {
   return (
     <div className='relative'>
       <SEOHead title='AI' />
@@ -16,3 +16,5 @@ export default function AI() {
     </div>
   )
 }
+
+export default AI

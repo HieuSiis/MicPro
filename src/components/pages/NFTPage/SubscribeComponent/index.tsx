@@ -12,7 +12,7 @@ const SubscribeComponent = () => {
       </Heading>
 
       <p className='mx-auto mt-5 max-w-[682px] text-center font-poppins text-sm font-normal text-dark1 sm:mt-[34px] sm:text-xl'>
-        Stay Up To Date On New Releases, Interviews, Events, And Updates From Foundation's
+        Stay Up To Date On New Releases, Interviews, Events, And Updates From Foundation&apos;s
         Community.
       </p>
 

@@ -17,7 +17,7 @@ const TrustedCompanies = () => {
       </h5>
       <div className='flex flex-wrap justify-center gap-x-10 gap-y-[30px] px-11 sm:gap-[60px] sm:px-0'>
         {Logos.map((item, index) => (
-          <img src={item.img} alt='' className='h-8 sm:h-12' />
+          <img key={index} src={item.img} alt='' className='h-8 sm:h-12' />
         ))}
       </div>
     </section>

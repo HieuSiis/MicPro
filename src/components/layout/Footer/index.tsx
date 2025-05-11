@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { ArrowWhite } from 'assets/icons'
-import IButton from 'assets/icons/Button.svg'
 import { Dribble, Facebook, GooglePlus, Twitter } from 'assets/icons/social-media-icons'
 import Logo from 'assets/images/logo.svg'
 
@@ -58,9 +57,9 @@ const Footer = () => {
           <div key={index} className={index === 2 ? 'col-span-2 sm:col-span-1' : ''}>
             <h4 className='mb-6 text-base font-semibold text-gray-800'>{item.title}</h4>
             <ul className='space-y-3'>
-              {item.items.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.href}>{item.label}</Link>
+              {item.items.map((itm, idx) => (
+                <li key={idx}>
+                  <Link href={itm.href}>{itm.label}</Link>
                 </li>
               ))}
             </ul>

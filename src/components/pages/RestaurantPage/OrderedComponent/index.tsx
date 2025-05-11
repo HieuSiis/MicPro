@@ -85,7 +85,9 @@ const OrderedComponent = () => {
                   <p className='block font-sora text-[28px] font-bold text-blue-600 sm:hidden'>
                     ${food.price}
                   </p>
-                  <button className='ml-[59px] h-11 w-11 rounded-md bg-blue-600 text-white hover:bg-blue-700 sm:h-[60px] sm:w-[60px]'>
+                  <button
+                    type='button'
+                    className='ml-[59px] h-11 w-11 rounded-md bg-blue-600 text-white hover:bg-blue-700 sm:h-[60px] sm:w-[60px]'>
                     <ShoppingCartOutlined className='text-5 sm:text-[32px]' />
                   </button>
                 </div>
@@ -97,7 +99,9 @@ const OrderedComponent = () => {
                     ${food.price}
                   </p>
                   <div className='ml-auto'>
-                    <button className='h-11 w-11 rounded-md bg-blue-600 text-white hover:bg-blue-700 sm:h-[60px] sm:w-[60px]'>
+                    <button
+                      type='button'
+                      className='h-11 w-11 rounded-md bg-blue-600 text-white hover:bg-blue-700 sm:h-[60px] sm:w-[60px]'>
                       <ShoppingCartOutlined className='text-5 sm:text-[32px]' />
                     </button>
                   </div>
@@ -108,7 +112,9 @@ const OrderedComponent = () => {
         </div>
 
         <div className=' mb-5 mt-5 flex justify-center sm:mt-[50px]'>
-          <button className=' flex justify-center rounded-lg bg-primary px-11 py-[18px] text-white'>
+          <button
+            type='button'
+            className=' flex justify-center rounded-lg bg-primary px-11 py-[18px] text-white'>
             VIEW ALL FOOD <Image className='ml-[10px]' src={Arrow} alt='' width={24} height={24} />
           </button>
         </div>
