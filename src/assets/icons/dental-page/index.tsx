@@ -11,6 +11,3 @@ export { default as ToothBlue } from './tooth-blue.svg'
 export { default as Tomography } from './tomography.svg'
 export { default as Siren } from './siren.svg'
 export { default as Pharmacy } from './community-center.svg'
-
-
-

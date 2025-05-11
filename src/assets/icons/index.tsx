@@ -5,7 +5,7 @@ export { default as MenuIcon } from './Menu.svg'
 export { default as SpeakerIcon } from './Speaker.svg'
 
 // Agency page SliderComponent
-export { default as Group } from "./Group.svg"
+export { default as Group } from './Group.svg'
 export { default as DoubleQuote } from './double-quote.svg'
 
 // Agency page TeamComponent
@@ -18,7 +18,7 @@ export { default as Instagram } from './HoverIns.svg'
 export { default as Arrow } from './Arrow.svg'
 export { default as Play } from './Play.svg'
 
-// Charity page 
+// Charity page
 export { default as Shelter } from './shelter.svg'
 export { default as Food } from './food.svg'
 export { default as Edu } from './educational.svg'
@@ -34,8 +34,3 @@ export { default as SparkleBlue } from './sparkle.svg'
 
 // Footer Layout
 export { default as ArrowWhite } from './Arrow.svg'
-
-
-
-
-

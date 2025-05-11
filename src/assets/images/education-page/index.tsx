@@ -13,4 +13,3 @@ export { default as Img1 } from './course-img1.png'
 export { default as Img2 } from './course-img2.png'
 export { default as Img3 } from './course-img3.png'
 export { default as Img4 } from './course-img4.png'
-

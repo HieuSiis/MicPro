@@ -1,32 +1,31 @@
+import Image from 'next/image'
 import React from 'react'
-import Image from "next/image";
-import IMG from "assets/images/charity-page/img-cta-charity.png"
 
-import ArrowButton from 'components/ui/Button/ArrowButton';
+import IMG from 'assets/images/charity-page/img-cta-charity.png'
+import ArrowButton from 'components/ui/Button/ArrowButton'
 
 const CtaComponent = () => {
-    return (
-        <section className="main-container sm:pt-[120px] pt-[70px]">
-            <div className="w-full bg-gradientCtaCharity text-white rounded-2xl sm:pt-11 pt-9 flex flex-col-reverse sm:flex-row items-center">
+  return (
+    <section className='main-container pt-[70px] sm:pt-[120px]'>
+      <div className='flex w-full flex-col-reverse items-center rounded-2xl bg-gradientCtaCharity pt-9 text-white sm:flex-row sm:pt-11'>
+        <div>
+          <Image src={IMG} alt='Volunteers' className='mt-8 px-[18px] sm:mt-0 sm:px-0 ' />
+        </div>
 
-                <div >
-                    <Image
-                        src={IMG}
-                        alt="Volunteers"
-                        className='sm:mt-0 mt-8 sm:px-0 px-[18px] '
-                    />
-                </div>
-
-                <div className="sm:w-1/2 sm:mt-0 sm:pl-8 text-white sm:text-left text-center">
-                    <h2 className="sm:text-[34px] text-xl font-sora font-bold sm:max-w-[413px] max-w-[241px] sm:mb-8 mb-6 sm:leading-10 leading-7 sm:mx-0 mx-auto">Become a Volunteer of  our charity</h2>
-                    <p className="text-[16px] font-poppins sm:max-w-[486px] max-w-[267px] font-normal opacity-70">
-                        We believe your project is only as good as the team that's working on it. When we work with you and your team, we know there are no shortcuts to success. Your research is done; now lets get down to business!
-                    </p>
-                    <ArrowButton className='sm:mt-11 mt-6 sm:mx-0 mx-auto'>Join the team</ArrowButton>
-                </div>
-            </div>
-        </section>
-    )
+        <div className='text-center text-white sm:mt-0 sm:w-1/2 sm:pl-8 sm:text-left'>
+          <h2 className='mx-auto mb-6 max-w-[241px] font-sora text-xl font-bold leading-7 sm:mx-0 sm:mb-8 sm:max-w-[413px] sm:text-[34px] sm:leading-10'>
+            Become a Volunteer of our charity
+          </h2>
+          <p className='max-w-[267px] font-poppins text-[16px] font-normal opacity-70 sm:max-w-[486px]'>
+            We believe your project is only as good as the team that's working on it. When we work
+            with you and your team, we know there are no shortcuts to success. Your research is
+            done; now lets get down to business!
+          </p>
+          <ArrowButton className='mx-auto mt-6 sm:mx-0 sm:mt-11'>Join the team</ArrowButton>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default CtaComponent

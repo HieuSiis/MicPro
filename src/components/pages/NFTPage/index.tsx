@@ -1,33 +1,34 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
-import CollectionsComponent from './CollectionsComponent'
+
 import BidComponent from './BidComponent'
+import CollectionsComponent from './CollectionsComponent'
+import FAQComponent from './FAQComponent'
+import HeroComponent from './HeroComponent'
 import MarketPlace from './MarketPlace'
 import SellerComponent from './SellerComponent'
-import TrendingCreators from './TrendingCreators'
-import FAQComponent from './FAQComponent'
 import SubscribeComponent from './SubscribeComponent'
+import TrendingCreators from './TrendingCreators'
 
 const NFTPage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <CollectionsComponent />
+      <CollectionsComponent />
 
-            <BidComponent />
+      <BidComponent />
 
-            <MarketPlace />
+      <MarketPlace />
 
-            <SellerComponent />
+      <SellerComponent />
 
-            <TrendingCreators />
+      <TrendingCreators />
 
-            <FAQComponent />
+      <FAQComponent />
 
-            <SubscribeComponent />
-        </main>
-    )
+      <SubscribeComponent />
+    </main>
+  )
 }
 
 export default NFTPage

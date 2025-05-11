@@ -22,5 +22,3 @@ export { default as Img2Audience } from './card-audience.png'
 export { default as Avatar } from './avt-slider.png'
 export { default as Amazon } from './Amazon.svg'
 export { default as Group } from './Group.svg'
-
-

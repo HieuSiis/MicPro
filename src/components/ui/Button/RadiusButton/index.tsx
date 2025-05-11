@@ -1,16 +1,22 @@
 import React, { ComponentProps } from 'react'
-import { twMerge } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge'
 
 type ButtonProps = {
-    children: React.ReactNode
-    className?: string;
-} & ComponentProps<"button">
-const RadiusButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (
-        <button className={twMerge("py-[18px] px-[50px] rounded-full text-base font-medium flex items-center font-poppins justify-center gap-2.5", className)} {...rest}>
-            {children}
-        </button>
-    )
+  children: React.ReactNode
+  className?: string
+} & ComponentProps<'button'>
+const RadiusButton = ({ children, className = '', ...rest }: ButtonProps) => {
+  return (
+    <button
+      className={twMerge(
+        'flex items-center justify-center gap-2.5 rounded-full px-[50px] py-[18px] font-poppins text-base font-medium',
+        className
+      )}
+      {...rest}
+    >
+      {children}
+    </button>
+  )
 }
 
 export default RadiusButton

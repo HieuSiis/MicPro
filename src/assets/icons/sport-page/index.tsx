@@ -17,5 +17,3 @@ export { default as Building } from './building.svg'
 
 // Testimonial Component
 export { default as DoubleQuote } from './doube-quote.svg'
-
-

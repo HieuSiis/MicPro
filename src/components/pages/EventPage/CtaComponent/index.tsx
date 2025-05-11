@@ -1,19 +1,23 @@
-import ArrowButton from 'components/ui/Button/ArrowButton'
 import React from 'react'
 
-const CtaComponent = () => {
-    return (
-        <section className='main-container sm:py-[139px] py-[50px]'>
-            <div className=' bg-gradientBlue2 rounded-[20px] sm:py-[70px] py-[52px]'>
-                <div className='font-poppins text-lg font-semibold sm:mb-[18px] mb-3 text-white mx-auto text-center'>Free Ticket</div>
-                <h2 className='sm:text-[50px] text-[28px] font-sora font-bold sm:mb-[30px] mb-11 text-white sm:max-w-[775px] max-w-[279px] mx-auto text-center'>Ready to manage your events smarter, better?</h2>
-                <div className='flex justify-center'>
-                    <ArrowButton className='font-semibold'>Get Started Now</ArrowButton>
-                </div>
-            </div>
+import ArrowButton from 'components/ui/Button/ArrowButton'
 
-        </section>
-    )
+const CtaComponent = () => {
+  return (
+    <section className='main-container py-[50px] sm:py-[139px]'>
+      <div className=' rounded-[20px] bg-gradientBlue2 py-[52px] sm:py-[70px]'>
+        <div className='mx-auto mb-3 text-center font-poppins text-lg font-semibold text-white sm:mb-[18px]'>
+          Free Ticket
+        </div>
+        <h2 className='mx-auto mb-11 max-w-[279px] text-center font-sora text-[28px] font-bold text-white sm:mb-[30px] sm:max-w-[775px] sm:text-[50px]'>
+          Ready to manage your events smarter, better?
+        </h2>
+        <div className='flex justify-center'>
+          <ArrowButton className='font-semibold'>Get Started Now</ArrowButton>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default CtaComponent

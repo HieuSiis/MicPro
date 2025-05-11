@@ -14,5 +14,3 @@ export { default as AvtO } from './bg-orange-avt.png'
 export { default as AvtPink } from './bg-pink-avt.png'
 export { default as AvtPurple } from './bg-purple-avt.png'
 export { default as AvtBL } from './bg-bluelight-avt.png'
-
-

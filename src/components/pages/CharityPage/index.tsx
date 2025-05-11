@@ -1,37 +1,37 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
-import CompaniesComponent from './CompaniesComponent'
-import HelpingComponent from './HelpingComponent'
-import VideoComponent from './VideoComponent'
-import DonorsComponent from './DonorsComponent'
+
 import BreatheComponent from './BreatheComponent'
-import Testimonial from './Testimonial'
 import CampaignsComponent from './CampaignsComponent'
+import CompaniesComponent from './CompaniesComponent'
 import CtaComponent from './CtaComponent'
+import DonorsComponent from './DonorsComponent'
+import HelpingComponent from './HelpingComponent'
+import HeroComponent from './HeroComponent'
+import Testimonial from './Testimonial'
+import VideoComponent from './VideoComponent'
 
 const CharityPage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <CompaniesComponent />
+      <CompaniesComponent />
 
-            <HelpingComponent />
+      <HelpingComponent />
 
-            <VideoComponent />
+      <VideoComponent />
 
-            <DonorsComponent />
+      <DonorsComponent />
 
-            <BreatheComponent />
+      <BreatheComponent />
 
-            <Testimonial />
+      <Testimonial />
 
-            <CampaignsComponent />
+      <CampaignsComponent />
 
-            <CtaComponent />
-
-        </main>
-    )
+      <CtaComponent />
+    </main>
+  )
 }
 
 export default CharityPage

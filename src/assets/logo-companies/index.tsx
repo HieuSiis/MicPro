@@ -17,4 +17,3 @@ export { default as SlackColor } from './slack-color.svg'
 export { default as GGColor } from './gg-color.svg'
 export { default as HubSpotColor } from './hubspot-color.svg'
 export { default as GustoColor } from './gusto-color.svg'
-

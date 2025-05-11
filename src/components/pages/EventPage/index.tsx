@@ -1,36 +1,37 @@
 import React from 'react'
+
+import Audience from './Audience'
+import ChannelMarketing from './ChannelMarketing'
+import CtaComponent from './CtaComponent'
+import EventCard from './EventCard'
+import FAQComponent from './FAQComponent'
 import HeroComponent from './HeroComponent'
 import PartnerStats from './PartnerStats'
-import EventCard from './EventCard'
-import TicketingComponent from './TicketingComponent'
-import ChannelMarketing from './ChannelMarketing'
-import Audience from './Audience'
 import SliderComponent from './SliderComponent'
-import FAQComponent from './FAQComponent'
-import CtaComponent from './CtaComponent'
+import TicketingComponent from './TicketingComponent'
 
 const EventPage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <PartnerStats />
+      <PartnerStats />
 
-            <EventCard />
+      <EventCard />
 
-            <TicketingComponent />
+      <TicketingComponent />
 
-            <ChannelMarketing />
+      <ChannelMarketing />
 
-            <Audience />
+      <Audience />
 
-            <SliderComponent />
+      <SliderComponent />
 
-            <FAQComponent />
+      <FAQComponent />
 
-            <CtaComponent />
-        </main>
-    )
+      <CtaComponent />
+    </main>
+  )
 }
 
 export default EventPage

@@ -18,4 +18,3 @@ export { default as Doctor3 } from './doctor-3.png'
 export { default as Julita } from './Julita-avt.png'
 export { default as Matthias } from './matthias-avt.png'
 export { default as Ben } from './ben-avt.png'
-

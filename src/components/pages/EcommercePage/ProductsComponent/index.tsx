@@ -1,95 +1,107 @@
-import Image from 'next/image';
-import React from 'react';
-import { HeartFilled, HeartOutlined } from '@ant-design/icons';
-import { Arrow } from 'assets/icons';
-import { TShirtBlack, TShirtBlue, TShirtOrange, TShirtPink } from 'assets/images/ecommerce-page';
-import { Carousel } from 'antd';
+import { HeartFilled, HeartOutlined } from '@ant-design/icons'
+import { Carousel } from 'antd'
+import Image from 'next/image'
+import React from 'react'
+
+import { Arrow } from 'assets/icons'
+import { TShirtBlack, TShirtBlue, TShirtOrange, TShirtPink } from 'assets/images/ecommerce-page'
 
 const productList = [
-    { img: TShirtBlack, liked: true },
-    { img: TShirtOrange, liked: false },
-    { img: TShirtBlue, liked: false },
-    { img: TShirtPink, liked: false },
-];
+  { img: TShirtBlack, liked: true },
+  { img: TShirtOrange, liked: false },
+  { img: TShirtBlue, liked: false },
+  { img: TShirtPink, liked: false },
+]
 
 const ProductsComponent = () => {
-    return (
-        <section className='sm:main-container mobile-container bg-white rounded-3xl sm:py-[70px] py-10 sm:px-12 px-[38px]'>
-            <div className="flex justify-between items-center mb-12">
-                <h1 className='sm:text-[50px] text-[28px] font-bold font-sora leading-tight'>
-                    Popular <span className='text-primary'>Products</span>
-                </h1>
-                <button className='bg-primary sm:flex hidden items-center text-white py-[14px] px-6 rounded-lg text-base font-medium'>
-                    See all Products
-                    <Image className='ml-[10px]' src={Arrow} alt='arrow' width={24} height={24} />
-                </button>
+  return (
+    <section className='sm:main-container mobile-container rounded-3xl bg-white px-[38px] py-10 sm:px-12 sm:py-[70px]'>
+      <div className='mb-12 flex items-center justify-between'>
+        <h1 className='font-sora text-[28px] font-bold leading-tight sm:text-[50px]'>
+          Popular <span className='text-primary'>Products</span>
+        </h1>
+        <button className='hidden items-center rounded-lg bg-primary px-6 py-[14px] text-base font-medium text-white sm:flex'>
+          See all Products
+          <Image className='ml-[10px]' src={Arrow} alt='arrow' width={24} height={24} />
+        </button>
+      </div>
+      <Carousel autoplay className='custom-carousel-card sm:hidden'>
+        {productList.map((product, index) => (
+          <div key={index} className='group relative'>
+            <div className='relative mb-4 flex h-[250px] w-[250px] items-center justify-center rounded-t-md bg-gray-100 '>
+              <Image src={product.img} alt={`t-shirt-${index}`} className='object-contain' />
+
+              {product.liked ? (
+                <div className='absolute right-4 top-4 text-xl text-pink-500'>
+                  <HeartFilled />
+                </div>
+              ) : (
+                <div className='absolute right-4 top-4 text-xl text-dark1'>
+                  <HeartOutlined />
+                </div>
+              )}
             </div>
-            <Carousel autoplay className='sm:hidden custom-carousel-card'>
-                {productList.map((product, index) => (
-                    <div key={index} className='relative group'>
-                        <div className="bg-gray-100 rounded-t-md h-[250px] w-[250px] flex items-center justify-center mb-4 relative ">
-                            <Image src={product.img} alt={`t-shirt-${index}`} className="object-contain" />
-
-                            {product.liked ?
-                                <div className="absolute top-4 right-4 text-xl text-pink-500">
-                                    <HeartFilled />
-                                </div>
-                                :
-                                <div className="absolute top-4 right-4 text-xl text-dark1">
-                                    <HeartOutlined />
-                                </div>
-                            }
-                        </div>
-                        <div className="flex justify-between items-center px-5 py-[10px] rounded-b-md group-hover:shadow-xl">
-                            <div>
-                                <h2 className="font-semibold text-lg text-indigo-950 font-poppins">Smart t- Sirt</h2>
-                                <div className="font-poppins mt-1">
-                                    <span className="font-semibold text-xl">40<small className='text-[13px] font-semibold text-primary'>$</small> </span>
-                                    <span className="text-neutral-400 line-through text-[10px] font-normal">100$</span>
-                                </div>
-                            </div>
-                            <button className="bg-primary text-white rounded-[4px] px-5 py-1 font-poppins font-medium text-base">
-                                BUY
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </Carousel>
-
-            <div className='hidden sm:flex justify-between items-center'>
-                {productList.map((product, index) => (
-                    <div key={index} className='relative group cursor-pointer'>
-                        <div className="bg-gray-100 rounded-t-md h-[250px] w-[250px] flex items-center justify-center relative ">
-                            <Image src={product.img} alt={`t-shirt-${index}`} className="object-contain" />
-
-                            {product.liked ?
-                                <div className="absolute top-4 right-4 text-xl text-pink-500">
-                                    <HeartFilled />
-                                </div>
-                                :
-                                <div className="absolute top-4 right-4 text-xl text-dark1">
-                                    <HeartOutlined />
-                                </div>
-                            }
-                        </div>
-                        <div className="flex justify-between items-center group-hover:px-5 py-[10px] rounded-b-md group-hover:shadow-xl">
-                            <div>
-                                <h2 className="font-semibold text-lg text-indigo-950 font-poppins mt-[18px]">Smart t- Sirt</h2>
-                                <div className="font-poppins mt-1">
-                                    <span className="font-semibold text-xl">40<small className='text-[13px] font-semibold text-primary'>$</small> </span>
-                                    <span className="text-neutral-400 line-through text-[10px] font-normal">100$</span>
-                                </div>
-                            </div>
-                            <button className="bg-primary text-white rounded-[4px] px-5 py-1 font-poppins font-medium text-base">
-                                BUY
-                            </button>
-                        </div>
-                    </div>
-                ))}
+            <div className='flex items-center justify-between rounded-b-md px-5 py-[10px] group-hover:shadow-xl'>
+              <div>
+                <h2 className='font-poppins text-lg font-semibold text-indigo-950'>
+                  Smart t- Sirt
+                </h2>
+                <div className='mt-1 font-poppins'>
+                  <span className='text-xl font-semibold'>
+                    40<small className='text-[13px] font-semibold text-primary'>$</small>{' '}
+                  </span>
+                  <span className='text-[10px] font-normal text-neutral-400 line-through'>
+                    100$
+                  </span>
+                </div>
+              </div>
+              <button className='rounded-[4px] bg-primary px-5 py-1 font-poppins text-base font-medium text-white'>
+                BUY
+              </button>
             </div>
+          </div>
+        ))}
+      </Carousel>
 
-        </section>
-    );
-};
+      <div className='hidden items-center justify-between sm:flex'>
+        {productList.map((product, index) => (
+          <div key={index} className='group relative cursor-pointer'>
+            <div className='relative flex h-[250px] w-[250px] items-center justify-center rounded-t-md bg-gray-100 '>
+              <Image src={product.img} alt={`t-shirt-${index}`} className='object-contain' />
 
-export default ProductsComponent;
+              {product.liked ? (
+                <div className='absolute right-4 top-4 text-xl text-pink-500'>
+                  <HeartFilled />
+                </div>
+              ) : (
+                <div className='absolute right-4 top-4 text-xl text-dark1'>
+                  <HeartOutlined />
+                </div>
+              )}
+            </div>
+            <div className='flex items-center justify-between rounded-b-md py-[10px] group-hover:px-5 group-hover:shadow-xl'>
+              <div>
+                <h2 className='mt-[18px] font-poppins text-lg font-semibold text-indigo-950'>
+                  Smart t- Sirt
+                </h2>
+                <div className='mt-1 font-poppins'>
+                  <span className='text-xl font-semibold'>
+                    40<small className='text-[13px] font-semibold text-primary'>$</small>{' '}
+                  </span>
+                  <span className='text-[10px] font-normal text-neutral-400 line-through'>
+                    100$
+                  </span>
+                </div>
+              </div>
+              <button className='rounded-[4px] bg-primary px-5 py-1 font-poppins text-base font-medium text-white'>
+                BUY
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default ProductsComponent

@@ -1,43 +1,53 @@
-import Heading from 'components/ui/Heading'
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
+
 import { DescribeProject, FinishProject, ProjectName } from 'assets/images/ai-page'
+import Heading from 'components/ui/Heading'
 
 const items = [
-    {
-        title: 'Enter your project Name',
-        description: 'Describe your topic (minimum 5 words):My topic is the nutritional benefits of flaxseed. I have chosen to rank for "flaxseed" on Google.',
-        image: ProjectName,
-        bgCard: 'bg-fuchsia-50',
-        bgGradientImg: 'bg-gradientBlue2'
-    },
-    {
-        title: 'Describe your product',
-        description: 'Get a variety of high-converting copy every time you hit "Generate" thanks to snippets, forms, and designs that fit seamlessly into your content.',
-        image: DescribeProject,
-        bgCard: 'bg-violet-50',
-        bgGradientImg: 'bg-gradientSky'
-    },
-    {
-        title: 'Finish Your Project',
-        description: 'Add AI-powered editing tools to your content and publish it in one click to WordPress, Wix, Shopify and more.',
-        image: FinishProject,
-        bgCard: 'bg-sky-50',
-        bgGradientImg: 'bg-gradientRose'
-    }
+  {
+    title: 'Enter your project Name',
+    description:
+      'Describe your topic (minimum 5 words):My topic is the nutritional benefits of flaxseed. I have chosen to rank for "flaxseed" on Google.',
+    image: ProjectName,
+    bgCard: 'bg-fuchsia-50',
+    bgGradientImg: 'bg-gradientBlue2',
+  },
+  {
+    title: 'Describe your product',
+    description:
+      'Get a variety of high-converting copy every time you hit "Generate" thanks to snippets, forms, and designs that fit seamlessly into your content.',
+    image: DescribeProject,
+    bgCard: 'bg-violet-50',
+    bgGradientImg: 'bg-gradientSky',
+  },
+  {
+    title: 'Finish Your Project',
+    description:
+      'Add AI-powered editing tools to your content and publish it in one click to WordPress, Wix, Shopify and more.',
+    image: FinishProject,
+    bgCard: 'bg-sky-50',
+    bgGradientImg: 'bg-gradientRose',
+  },
 ]
 const InputForm = () => {
-    return (
-        <section className='main-container sm:mt-[100px] mt-[70px]'>
-            <Heading className='sm:mb-[70px] mb-10'>How it work with <span className='text-blue-600'>Micpro</span></Heading>
-            <div className='flex flex-col sm:gap-[50px] gap-5'>
-                {items.map((item, index) => (
-                    <div className={`flex sm:flex-row flex-col-reverse items-center ${item.bgCard} rounded-xl py-8 px-10 sm:odd:gap-12 odd:gap-[30px] sm:even:gap-[72px] even:gap-[30px] sm:even:flex-row-reverse`}>
-                        <div className="flex">
-                            <div className={`relative sm:w-[524px] w-[299px] sm:h-[524px] h-[327px] ${item.bgGradientImg} rounded-xl sm:mb-[43px] mb-6`}></div>
+  return (
+    <section className='main-container mt-[70px] sm:mt-[100px]'>
+      <Heading className='mb-10 sm:mb-[70px]'>
+        How it work with <span className='text-blue-600'>Micpro</span>
+      </Heading>
+      <div className='flex flex-col gap-5 sm:gap-[50px]'>
+        {items.map((item, index) => (
+          <div
+            className={`flex flex-col-reverse items-center sm:flex-row ${item.bgCard} rounded-xl px-10 py-8 odd:gap-[30px] even:gap-[30px] sm:odd:gap-12 sm:even:flex-row-reverse sm:even:gap-[72px]`}
+          >
+            <div className='flex'>
+              <div
+                className={`relative h-[327px] w-[299px] sm:h-[524px] sm:w-[524px] ${item.bgGradientImg} mb-6 rounded-xl sm:mb-[43px]`}
+              />
 
-                            <div className=' absolute sm:translate-y-10 translate-y-[30px] sm:translate-x-[30px] translate-x-6 sm:w-[468px] w-[250px] sm:h-[504px] h-[315px] flex flex-col bg-white rounded-lg'>
-                                {/* <h5 className='font-manrope text-xs font-extrabold mb-1'>Product Descriptions 👋</h5>
+              <div className=' absolute flex h-[315px] w-[250px] translate-x-6 translate-y-[30px] flex-col rounded-lg bg-white sm:h-[504px] sm:w-[468px] sm:translate-x-[30px] sm:translate-y-10'>
+                {/* <h5 className='font-manrope text-xs font-extrabold mb-1'>Product Descriptions 👋</h5>
                                 <p className='font-manrope text-[10px] text-gray-400 font-medium'>Product descriptions that will inspire, and influence.</p>
                                 <form action="" className='py-6 space-y-4'>
                                     <div>
@@ -83,22 +93,23 @@ const InputForm = () => {
                                         Generate
                                     </button>
                                 </form> */}
-                                <Image src={item.image} alt='' />
-                            </div>
-                        </div>
-
-                        <div className='flex flex-col'>
-                            <h2 className='font-sora sm:text-[50px] text-[28px] font-bold sm:mb-7 mb-4 leading-tight'>{item.title}</h2>
-                            <p className='sm:text-xl text-sm font-poppins font-normal text-dark1 sm:max-w-[494px] max-w-[280px]'>{item.description}</p>
-                        </div>
-                    </div>
-                ))}
+                <Image src={item.image} alt='' />
+              </div>
             </div>
 
-
-
-        </section>
-    )
+            <div className='flex flex-col'>
+              <h2 className='mb-4 font-sora text-[28px] font-bold leading-tight sm:mb-7 sm:text-[50px]'>
+                {item.title}
+              </h2>
+              <p className='max-w-[280px] font-poppins text-sm font-normal text-dark1 sm:max-w-[494px] sm:text-xl'>
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
 }
 
 export default InputForm

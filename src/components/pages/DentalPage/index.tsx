@@ -1,31 +1,31 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
+
+import CtaComponent from './CtaComponent'
 import DecareComponent from './DecareComponent'
 import DentalOverview from './DentalOverview'
+import HeroComponent from './HeroComponent'
+import PatientsComponent from './PatientsComponent'
 import ServicesComponent from './ServicesComponent'
 import SpecialistComponent from './SpecialistComponent'
-import PatientsComponent from './PatientsComponent'
-import CtaComponent from './CtaComponent'
 
 const DentalPage = () => {
-    return (
-        <main>
+  return (
+    <main>
+      <HeroComponent />
 
-            <HeroComponent />
+      <DecareComponent />
 
-            <DecareComponent />
+      <DentalOverview />
 
-            <DentalOverview />
+      <ServicesComponent />
 
-            <ServicesComponent />
+      <SpecialistComponent />
 
-            <SpecialistComponent />
+      <PatientsComponent />
 
-            <PatientsComponent />
-
-            <CtaComponent />
-        </main>
-    )
+      <CtaComponent />
+    </main>
+  )
 }
 
 export default DentalPage

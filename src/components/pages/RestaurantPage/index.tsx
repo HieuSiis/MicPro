@@ -1,33 +1,34 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
-import FeaturesComponent from './FeaturesComponent'
-import StatsComponent from './StatsComponent'
-import OrderedComponent from './OrderedComponent'
-import OfferComponent from './OfferComponent'
+
 import BlogComponent from './BlogComponent'
 import ClientsComponent from './ClientsComponent'
 import CtaComponent from './CtaComponent'
+import FeaturesComponent from './FeaturesComponent'
+import HeroComponent from './HeroComponent'
+import OfferComponent from './OfferComponent'
+import OrderedComponent from './OrderedComponent'
+import StatsComponent from './StatsComponent'
 
 const RestaurantPage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <FeaturesComponent />
+      <FeaturesComponent />
 
-            <StatsComponent />
+      <StatsComponent />
 
-            <OrderedComponent />
+      <OrderedComponent />
 
-            <OfferComponent />
+      <OfferComponent />
 
-            <BlogComponent />
+      <BlogComponent />
 
-            <ClientsComponent />
+      <ClientsComponent />
 
-            <CtaComponent />
-        </main>
-    )
+      <CtaComponent />
+    </main>
+  )
 }
 
 export default RestaurantPage

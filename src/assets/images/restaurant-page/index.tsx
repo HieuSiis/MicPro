@@ -8,7 +8,7 @@ export { default as ExqRecipe } from './exquisite-recipe.png'
 export { default as Crispy } from './crispy-baked.png'
 export { default as Pasta } from './pasta.png'
 
-// Offer Component 
+// Offer Component
 export { default as Lunch } from './lunch-time.png'
 
 export { default as SpicyClub } from './spicy-club.png'
@@ -26,6 +26,3 @@ export { default as Elmo } from './elmo-clients.png'
 
 // Cta Component
 export { default as Hamburger } from './hamburger.png'
-
-
-

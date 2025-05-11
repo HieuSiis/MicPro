@@ -1,40 +1,40 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
+
+import BlogComponent from './BlogComponent'
 import CourseComponent from './CourseComponent'
-import TrustedCompanies from './TrustedCompanies'
+import CtaComponent from './CtaComponent'
 import DifferenceComponent from './DifferenceComponent'
+import HeroComponent from './HeroComponent'
 import IndustryComponent from './IndustryComponent'
 import JoinUsComponent from './JoinUsComponent'
-import StatsComponent from './StatsComponent'
 import ReviewStudent from './ReviewStudent'
-import BlogComponent from './BlogComponent'
-import CtaComponent from './CtaComponent'
+import StatsComponent from './StatsComponent'
+import TrustedCompanies from './TrustedCompanies'
 
 const EducationPage = () => {
-    return (
-        <main>
+  return (
+    <main>
+      <HeroComponent />
 
-            <HeroComponent />
+      <CourseComponent />
 
-            <CourseComponent />
+      <TrustedCompanies />
 
-            <TrustedCompanies />
+      <DifferenceComponent />
 
-            <DifferenceComponent />
+      <IndustryComponent />
 
-            <IndustryComponent />
+      <JoinUsComponent />
 
-            <JoinUsComponent />
+      <StatsComponent />
 
-            <StatsComponent />
+      <ReviewStudent />
 
-            <ReviewStudent />
+      <BlogComponent />
 
-            <BlogComponent />
-
-            <CtaComponent />
-        </main>
-    )
+      <CtaComponent />
+    </main>
+  )
 }
 
 export default EducationPage

@@ -1,75 +1,90 @@
-import Heading from 'components/ui/Heading'
 import Image from 'next/image'
 import React from 'react'
 
-import { Fb, Instagram, LinkedIn, Twitter } from 'assets/icons';
-import { ImgPerson1, ImgPerson2, ImgPerson3, ImgPerson4, ImgPerson5, ImgPerson6 } from 'assets/images/agency-page';
+import { Fb, Instagram, LinkedIn, Twitter } from 'assets/icons'
+import {
+  ImgPerson1,
+  ImgPerson2,
+  ImgPerson3,
+  ImgPerson4,
+  ImgPerson5,
+  ImgPerson6,
+} from 'assets/images/agency-page'
+import Heading from 'components/ui/Heading'
 
 const teams = [
-    {
-        name: 'STEVE THOMAS',
-        role: 'WEB DEVELOPER',
-        icon: [Fb, Twitter, LinkedIn, Instagram],
-        img: ImgPerson1
-    },
-    {
-        name: 'STEVE THOMAS',
-        role: 'WEB DEVELOPER',
-        icon: [Fb, Twitter, LinkedIn, Instagram],
-        img: ImgPerson2
-    },
-    {
-        name: 'STEVE THOMAS',
-        role: 'WEB DEVELOPER',
-        icon: [Fb, Twitter, LinkedIn, Instagram],
-        img: ImgPerson3
-    },
-    {
-        name: 'STEVE THOMAS',
-        role: 'WEB DEVELOPER',
-        icon: [Fb, Twitter, LinkedIn, Instagram],
-        img: ImgPerson4
-    },
-    {
-        name: 'STEVE THOMAS',
-        role: 'WEB DEVELOPER',
-        icon: [Fb, Twitter, LinkedIn, Instagram],
-        img: ImgPerson5
-    },
-    {
-        name: 'STEVE THOMAS',
-        role: 'WEB DEVELOPER',
-        icon: [Fb, Twitter, LinkedIn, Instagram],
-        img: ImgPerson6
-    }
+  {
+    name: 'STEVE THOMAS',
+    role: 'WEB DEVELOPER',
+    icon: [Fb, Twitter, LinkedIn, Instagram],
+    img: ImgPerson1,
+  },
+  {
+    name: 'STEVE THOMAS',
+    role: 'WEB DEVELOPER',
+    icon: [Fb, Twitter, LinkedIn, Instagram],
+    img: ImgPerson2,
+  },
+  {
+    name: 'STEVE THOMAS',
+    role: 'WEB DEVELOPER',
+    icon: [Fb, Twitter, LinkedIn, Instagram],
+    img: ImgPerson3,
+  },
+  {
+    name: 'STEVE THOMAS',
+    role: 'WEB DEVELOPER',
+    icon: [Fb, Twitter, LinkedIn, Instagram],
+    img: ImgPerson4,
+  },
+  {
+    name: 'STEVE THOMAS',
+    role: 'WEB DEVELOPER',
+    icon: [Fb, Twitter, LinkedIn, Instagram],
+    img: ImgPerson5,
+  },
+  {
+    name: 'STEVE THOMAS',
+    role: 'WEB DEVELOPER',
+    icon: [Fb, Twitter, LinkedIn, Instagram],
+    img: ImgPerson6,
+  },
 ]
 
 const TeamComponent = () => {
-    return (
-        <section className='sm:pb-[120px] pb-[60px]'>
-            <div className='sm:main-container mobile-container'>
-                <Heading className='sm:mb-[30px] mb-6'>Our Creative <span className='text-primary'>Team</span></Heading>
-                <p className='text-center text-dark1 font-poppins sm:max-w-[481px] max-w-[327px] mx-auto sm:mb-[70px] mb-12'>Flowgiri is a creative and modern theme for startups, freelancers and creatives. </p>
-                <div className='grid sm:grid-cols-3 grid-cols-1 gap-12 max-w-[1075px] mx-auto'>
-                    {teams.map((item, index) => (
-                        <div key={index} className='w-full h-[385px] relative rounded-full group'>
-                            <div className="overlay absolute inset-0 z-10 bg-primary flex flex-col items-center justify-center p-2 bg-opacity-80 rounded-full text-white opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
-                                <h4 className='text-xl font-semibold font-poppins'>{item.name}</h4>
-                                <p className='text-sm'>{item.role}</p>
-                                <div className='flex space-x-2 mt-5'>
-                                    {item.icon.map((item, index) => (
-                                        <img key={index} src={item} alt="" />
-                                    ))}
-                                </div>
-                            </div>
-                            <Image src={item.img} alt='' fill className='w-full h-full object-cover rounded-full'></Image>
-                        </div>
-                    ))}
-
+  return (
+    <section className='pb-[60px] sm:pb-[120px]'>
+      <div className='sm:main-container mobile-container'>
+        <Heading className='mb-6 sm:mb-[30px]'>
+          Our Creative <span className='text-primary'>Team</span>
+        </Heading>
+        <p className='mx-auto mb-12 max-w-[327px] text-center font-poppins text-dark1 sm:mb-[70px] sm:max-w-[481px]'>
+          Flowgiri is a creative and modern theme for startups, freelancers and creatives.{' '}
+        </p>
+        <div className='mx-auto grid max-w-[1075px] grid-cols-1 gap-12 sm:grid-cols-3'>
+          {teams.map((item, index) => (
+            <div key={index} className='group relative h-[385px] w-full rounded-full'>
+              <div className='overlay invisible absolute inset-0 z-10 flex flex-col items-center justify-center rounded-full bg-primary bg-opacity-80 p-2 text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100'>
+                <h4 className='font-poppins text-xl font-semibold'>{item.name}</h4>
+                <p className='text-sm'>{item.role}</p>
+                <div className='mt-5 flex space-x-2'>
+                  {item.icon.map((item, index) => (
+                    <img key={index} src={item} alt='' />
+                  ))}
                 </div>
+              </div>
+              <Image
+                src={item.img}
+                alt=''
+                fill
+                className='h-full w-full rounded-full object-cover'
+              />
             </div>
-        </section>
-    )
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default TeamComponent

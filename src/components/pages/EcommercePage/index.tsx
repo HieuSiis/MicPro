@@ -1,39 +1,40 @@
 import React from 'react'
+
+import CtaComponent from './CtaComponent'
+import FeatureComponent from './FeatureComponent'
+import GrowFaster from './GrowFaster'
 import HeroComponent from './HeroComponent'
 import ProductsComponent from './ProductsComponent'
-import SimilarItems from './SimilarItems'
 import SellComponent from './SellComponent'
-import GrowFaster from './GrowFaster'
-import StatsComponent from './StatsComponent'
+import SimilarItems from './SimilarItems'
 import SliderComponent from './SliderComponent'
-import FeatureComponent from './FeatureComponent'
-import CtaComponent from './CtaComponent'
+import StatsComponent from './StatsComponent'
 
 const EcommercePage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <ProductsComponent />
+      <ProductsComponent />
 
-            <div>
-                <div className='relative overflow-x-hidden'>
-                    <SimilarItems />
-                    <div className="sm:w-[347px] sm:h-[345px] sm:rounded-[166px] w-[154px] h-[153px] rounded-[80px] bg-blue-400 sm:blur-[150px] blur-[67px] sm:left-[100px] -left-[33px] absolute sm:top-[750px] top-[1350px] -z-20"></div>
-                    <SellComponent />
-                    <div className="sm:w-[411px]  sm:h-[409px] sm:rounded-[204px] inset-0 w-[165px] h-[164px] rounded-[82px] bg-fuchsia-300 sm:blur-[150px] blur-[100px] absolute sm:top-[1450px] sm:left-[1000px] top-[2200px] left-[258px] -z-20 "></div>
-                    <GrowFaster />
-                    <StatsComponent />
-                </div>
-            </div>
+      <div>
+        <div className='relative overflow-x-hidden'>
+          <SimilarItems />
+          <div className='absolute -left-[33px] top-[1350px] -z-20 h-[153px] w-[154px] rounded-[80px] bg-blue-400 blur-[67px] sm:left-[100px] sm:top-[750px] sm:h-[345px] sm:w-[347px] sm:rounded-[166px] sm:blur-[150px]' />
+          <SellComponent />
+          <div className='absolute  inset-0 left-[258px] top-[2200px] -z-20 h-[164px] w-[165px] rounded-[82px] bg-fuchsia-300 blur-[100px] sm:left-[1000px] sm:top-[1450px] sm:h-[409px] sm:w-[411px] sm:rounded-[204px] sm:blur-[150px] ' />
+          <GrowFaster />
+          <StatsComponent />
+        </div>
+      </div>
 
-            <SliderComponent />
+      <SliderComponent />
 
-            <FeatureComponent />
+      <FeatureComponent />
 
-            <CtaComponent />
-        </main>
-    )
+      <CtaComponent />
+    </main>
+  )
 }
 
 export default EcommercePage

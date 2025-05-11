@@ -1,33 +1,34 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
-import ServiceComponent from './ServiceComponent'
+
 import BenefitComponent from './BenefitComponent'
+import BlogsComponent from './BlogsComponent'
+import HeroComponent from './HeroComponent'
 import PositionsComponent from './PositionsComponent'
 import ProgramComponent from './ProgramComponent'
+import ServiceComponent from './ServiceComponent'
 import StatsComponent from './StatsComponent'
 import TestimonialComponent from './TestimonialComponent'
-import BlogsComponent from './BlogsComponent'
 
 const SportPage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <ServiceComponent />
+      <ServiceComponent />
 
-            <BenefitComponent />
+      <BenefitComponent />
 
-            <PositionsComponent />
+      <PositionsComponent />
 
-            <ProgramComponent />
+      <ProgramComponent />
 
-            <StatsComponent />
+      <StatsComponent />
 
-            <TestimonialComponent />
+      <TestimonialComponent />
 
-            <BlogsComponent />
-        </main>
-    )
+      <BlogsComponent />
+    </main>
+  )
 }
 
 export default SportPage

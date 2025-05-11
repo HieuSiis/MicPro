@@ -1,14 +1,14 @@
 import React from 'react'
 
-import HeroComponent from './HeroComponent'
-import CompaniesComponent from './CompaniesComponent'
-import WorkComponent from './WorkComponent'
-import ExpertiseComponent from './ExpertiseComponent'
+import BlogComponent from './BlogComponent'
 import BudgetComponent from './BudgetComponent'
+import CompaniesComponent from './CompaniesComponent'
+import CtaComponent from './CtaComponent'
+import ExpertiseComponent from './ExpertiseComponent'
+import HeroComponent from './HeroComponent'
 import SliderComponent from './SliderComponent'
 import TeamComponent from './TeamComponent'
-import BlogComponent from './BlogComponent'
-import CtaComponent from './CtaComponent'
+import WorkComponent from './WorkComponent'
 
 const AgencyPage = () => {
   return (

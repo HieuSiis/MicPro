@@ -15,7 +15,7 @@ export { default as ImgPerson4 } from './img-person-4.png'
 export { default as ImgPerson5 } from './img-person-5.png'
 export { default as ImgPerson6 } from './img-person-6.png'
 
-// Blog Component 
+// Blog Component
 export { default as ImgBlog1 } from './img-blog-1.svg'
 export { default as ImgBlog2 } from './img-blog-2.png'
 export { default as ImgBlog3 } from './img-blog-3.png'

@@ -61,4 +61,3 @@ export { default as Avatar7 } from './trending-creators/avatar-7.png'
 export { default as Avatar8 } from './trending-creators/avatar-8.png'
 export { default as Avatar9 } from './trending-creators/avatar-9.png'
 export { default as Avatar10 } from './trending-creators/avatar-10.png'
-

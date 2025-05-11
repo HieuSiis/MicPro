@@ -1,6 +1,16 @@
 import { ConfigProvider } from 'antd'
 import type { AppProps } from 'next/app'
-import { Roboto, Sora, Poppins, Manrope, Space_Grotesk, Be_Vietnam_Pro, Inter, Mulish, DM_Sans } from 'next/font/google'
+import {
+  Roboto,
+  Sora,
+  Poppins,
+  Manrope,
+  Space_Grotesk,
+  Be_Vietnam_Pro,
+  Inter,
+  Mulish,
+  DM_Sans,
+} from 'next/font/google'
 import type { Session } from 'next-auth'
 import { SessionProvider } from 'next-auth/react'
 // handle more advanced cases than URLSearchParams supports.
@@ -73,11 +83,10 @@ const mulish = Mulish({
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '700',],
+  weight: ['400', '500', '700'],
   display: 'swap',
   variable: '--font-dm-sans',
 })
-
 
 type AppPropsWithAuth = AppProps<{ session: Session }> & {
   Component: {
@@ -88,7 +97,7 @@ type AppPropsWithAuth = AppProps<{ session: Session }> & {
 const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithAuth) => {
   if (process.env.NODE_ENV === 'production') {
     // Polyfill để tắt console.log trong production
-    console.log = function () { }
+    console.log = function () {}
   }
   const { store: storeWrapper, props: pageProps } = wrapper.useWrappedStore(otherProps)
   return (
@@ -104,7 +113,8 @@ const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithA
           <SessionProvider session={session}>
             {Component.requireAuth ? (
               <ProtectedLayout>
-                <main className={`
+                <main
+                  className={`
                   ${roboto.variable}
                   ${sora.variable} 
                   ${poppins.variable} 
@@ -114,14 +124,15 @@ const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithA
                   ${inter.variable} 
                   ${mulish.variable}
                   ${dmSans.variable}
-                  flex min-h-screen flex-col font-roboto`
-                }>
+                  flex min-h-screen flex-col font-roboto`}
+                >
                   <NextProgress />
                   <Component {...pageProps} />
                 </main>
               </ProtectedLayout>
             ) : (
-              <main className={`
+              <main
+                className={`
                 ${roboto.variable} 
                 ${sora.variable} 
                 ${poppins.variable} 
@@ -131,9 +142,8 @@ const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithA
                 ${inter.variable} 
                 ${mulish.variable}
                 ${dmSans.variable}
-                flex min-h-screen flex-col font-roboto`
-              }>
-
+                flex min-h-screen flex-col font-roboto`}
+              >
                 <NextProgress />
                 <Component {...pageProps} />
               </main>

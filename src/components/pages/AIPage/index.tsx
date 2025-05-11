@@ -1,30 +1,31 @@
 import React from 'react'
-import HeroComponent from './HeroComponent'
-import ClientLogos from './ClientLogos'
+
 import AIToolsGrid from './AIToolsGrid'
-import FormComponent from './FormComponent'
-import FeedbackComponent from './FeedbackComponent'
-import FAQComponent from './FAQComponent'
 import CategoryComponent from './CategoryComponent'
+import ClientLogos from './ClientLogos'
+import FAQComponent from './FAQComponent'
+import FeedbackComponent from './FeedbackComponent'
+import FormComponent from './FormComponent'
+import HeroComponent from './HeroComponent'
 
 const AIPage = () => {
-    return (
-        <main>
-            <HeroComponent />
+  return (
+    <main>
+      <HeroComponent />
 
-            <CategoryComponent />
+      <CategoryComponent />
 
-            <ClientLogos />
+      <ClientLogos />
 
-            <AIToolsGrid />
+      <AIToolsGrid />
 
-            <FormComponent />
+      <FormComponent />
 
-            <FeedbackComponent />
+      <FeedbackComponent />
 
-            <FAQComponent />
-        </main>
-    )
+      <FAQComponent />
+    </main>
+  )
 }
 
 export default AIPage

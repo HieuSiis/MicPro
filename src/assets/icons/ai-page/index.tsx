@@ -17,7 +17,3 @@ export { default as IEdit } from './edit.svg'
 export { default as IFb } from './facebook.svg'
 export { default as ITwitter } from './Twitter.svg'
 export { default as IContent } from './Content.svg'
-
-
-
-

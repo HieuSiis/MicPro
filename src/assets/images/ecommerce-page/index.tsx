@@ -22,7 +22,3 @@ export { default as GG } from './gg-icon.png'
 export { default as OntimeSp } from './onetime.png'
 export { default as AppMarket } from './app-market.png'
 export { default as MoB } from './manage-on-mobile.png'
-
-
-
-

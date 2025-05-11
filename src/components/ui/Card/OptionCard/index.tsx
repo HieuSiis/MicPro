@@ -1,25 +1,31 @@
-import React from 'react';
+import React from 'react'
 
 interface OptionCardProps {
-    icon: string;
-    bgIcon: string;
-    name: string;
-    description: string;
-    className?: string;
+  icon: string
+  bgIcon: string
+  name: string
+  description: string
+  className?: string
 }
 
-const OptionCard: React.FC<OptionCardProps> = ({ icon, bgIcon, name, description, className = '' }) => {
-    return (
-        <div className={`flex flex-1 ${className} rounded-lg p-6 gap-[14px]`}>
-            <div className={`flex ${bgIcon} w-10 h-10 items-center rounded-full justify-center`}>
-                <img src={icon} alt="" />
-            </div>
-            <div className="flex flex-col space-y-[9px]">
-                <h4 className='text-slate-900 font-manrope text-sm font-bold'>{name}</h4>
-                <p className='text-gray-500 font-manrope text-xs font-medium'>{description}</p>
-            </div>
-        </div>
-    );
-};
+const OptionCard: React.FC<OptionCardProps> = ({
+  icon,
+  bgIcon,
+  name,
+  description,
+  className = '',
+}) => {
+  return (
+    <div className={`flex flex-1 ${className} gap-[14px] rounded-lg p-6`}>
+      <div className={`flex ${bgIcon} h-10 w-10 items-center justify-center rounded-full`}>
+        <img src={icon} alt='' />
+      </div>
+      <div className='flex flex-col space-y-[9px]'>
+        <h4 className='font-manrope text-sm font-bold text-slate-900'>{name}</h4>
+        <p className='font-manrope text-xs font-medium text-gray-500'>{description}</p>
+      </div>
+    </div>
+  )
+}
 
-export default OptionCard;
+export default OptionCard

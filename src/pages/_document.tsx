@@ -8,7 +8,7 @@ const VataDocument = () => {
   return (
     <Html lang='en'>
       <Head />
-      <body >
+      <body>
         <Main />
         <NextScript />
       </body>
@@ -22,11 +22,11 @@ VataDocument.getInitialProps = async (ctx: DocumentContext) => {
   ctx.renderPage = () =>
     originalRenderPage({
       enhanceApp: (App) => (props) =>
-      (
-        <StyleProvider cache={cache}>
-          <App {...props} />
-        </StyleProvider>
-      ),
+        (
+          <StyleProvider cache={cache}>
+            <App {...props} />
+          </StyleProvider>
+        ),
     })
 
   const initialProps = await Document.getInitialProps(ctx)
