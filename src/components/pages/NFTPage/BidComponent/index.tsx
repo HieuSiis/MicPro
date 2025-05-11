@@ -50,7 +50,7 @@ const BidComponent = () => {
           <p className='mt-[18px] font-spaceGrotesk text-base font-normal text-gray-400'>
             Current Bid
           </p>
-          <span className='font-beVietnamPro text-xl font-bold text-slate-500'>1.0324 ETH</span>
+          <span className='font-sora text-xl font-bold text-slate-500'>1.0324 ETH</span>
           <div className='mt-[30px] flex gap-5 sm:mt-[38px]'>
             <RadiusButton className='bg-blue-600 px-5 py-3 font-poppins text-base font-semibold text-white sm:px-8 sm:py-[18px] sm:text-lg'>
               Place a Bid

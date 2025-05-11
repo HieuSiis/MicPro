@@ -17,7 +17,6 @@ module.exports = {
         poppins: ['var(--font-poppins)', ...fontFamily.sans],
         manrope: ['var(--font-manrope)', ...fontFamily.sans],
         spaceGrotesk: ['var(--font-space-grotesk)', ...fontFamily.sans],
-        beVietnamPro: ['var(--font-be-vietnam-pro)', ...fontFamily.sans],
         inter: ['var(--font-inter)', ...fontFamily.sans],
         mulish: ['var(--font-mulish)', ...fontFamily.sans],
         dmSans: ['var(--font-dm-sans)', ...fontFamily.sans],

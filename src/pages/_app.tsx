@@ -6,7 +6,6 @@ import {
   Poppins,
   Manrope,
   Space_Grotesk,
-  Be_Vietnam_Pro,
   Inter,
   Mulish,
   DM_Sans,
@@ -60,13 +59,6 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
 })
 
-const beVietnamPro = Be_Vietnam_Pro({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-  variable: '--font-be-vietnam-pro',
-})
-
 const inter = Inter({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -97,7 +89,7 @@ type AppPropsWithAuth = AppProps<{ session: Session }> & {
 const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithAuth) => {
   if (process.env.NODE_ENV === 'production') {
     // Polyfill để tắt console.log trong production
-    console.log = function () {}
+    console.log = function () { }
   }
   const { store: storeWrapper, props: pageProps } = wrapper.useWrappedStore(otherProps)
   return (
@@ -120,7 +112,6 @@ const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithA
                   ${poppins.variable} 
                   ${manrope.variable} 
                   ${spaceGrotesk.variable} 
-                  ${beVietnamPro.variable} 
                   ${inter.variable} 
                   ${mulish.variable}
                   ${dmSans.variable}
@@ -138,7 +129,6 @@ const App = ({ Component, pageProps: { session, ...otherProps } }: AppPropsWithA
                 ${poppins.variable} 
                 ${manrope.variable} 
                 ${spaceGrotesk.variable} 
-                ${beVietnamPro.variable} 
                 ${inter.variable} 
                 ${mulish.variable}
                 ${dmSans.variable}
