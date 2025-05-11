@@ -1,0 +1,22 @@
+<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="46" height="45" fill="#131313"/>
+<g id="Agency" clip-path="url(#clip0_16_53)">
+<rect width="1440" height="9596" transform="translate(-1215 -9220)" fill="white"/>
+<g id="Group 1000005807">
+<g id="Card 04">
+<g id="Email address">
+<rect id="Fill" x="-176.5" y="0.5" width="222" height="44" rx="7.5" stroke="#F0F0F0"/>
+<g id="Button">
+<path id="Fill_2" d="M0.5 0.5H38C42.1421 0.5 45.5 3.85786 45.5 8V37C45.5 41.1421 42.1421 44.5 38 44.5H0.5V0.5Z" fill="#7751F7" stroke="#F0F0F0"/>
+<path id="Icon (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M25.1716 19.4648L28.3536 22.6468C28.5488 22.842 28.5488 23.1586 28.3536 23.3539L25.1716 26.5359C24.9763 26.7311 24.6597 26.7311 24.4645 26.5359C24.2692 26.3406 24.2692 26.024 24.4645 25.8288L26.7929 23.5003H18C17.7239 23.5003 17.5 23.2765 17.5 23.0003C17.5 22.7242 17.7239 22.5003 18 22.5003H26.7929L24.4645 20.1719C24.2692 19.9767 24.2692 19.6601 24.4645 19.4648C24.6597 19.2695 24.9763 19.2695 25.1716 19.4648Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_16_53">
+<rect width="1440" height="9596" fill="white" transform="translate(-1215 -9220)"/>
+</clipPath>
+</defs>
+</svg>
