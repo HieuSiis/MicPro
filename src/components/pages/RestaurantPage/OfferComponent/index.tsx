@@ -48,7 +48,8 @@ const OfferComponent = () => {
             </p>
             <button
               type='button'
-              className='w-[130px] rounded-full bg-primary px-4 py-3 text-sm text-white transition hover:bg-blue-600'>
+              className='w-[130px] rounded-full bg-primary px-4 py-3 text-sm text-white transition hover:bg-blue-600'
+            >
               Order Now
             </button>
           </div>

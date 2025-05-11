@@ -40,7 +40,8 @@ const DifferenceComponent = () => {
         {Items.map((item, index) => (
           <div
             key={index}
-            className='flex flex-col rounded-xl border border-zinc-100 px-4 py-5 hover:shadow-lg'>
+            className='flex flex-col rounded-xl border border-zinc-100 px-4 py-5 hover:shadow-lg'
+          >
             <div
               className={`flex h-[64px] w-[64px] items-center justify-center rounded-xl shadow-lg  ${item.bgIcon}`}
             >

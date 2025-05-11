@@ -35,7 +35,8 @@ const CtaComponent = () => {
             />
             <button
               type='button'
-              className='rounded-[4px] bg-primary p-[11px] font-inter text-sm font-semibold text-white sm:p-5'>
+              className='rounded-[4px] bg-primary p-[11px] font-inter text-sm font-semibold text-white sm:p-5'
+            >
               Subscribe
             </button>
           </div>

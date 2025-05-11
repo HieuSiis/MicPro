@@ -20,7 +20,8 @@ const TestimonialComponent = () => {
           </p>
           <button
             type='button'
-            className='rounded-md bg-blue-600 px-10 py-4 text-white transition hover:bg-blue-700'>
+            className='rounded-md bg-blue-600 px-10 py-4 text-white transition hover:bg-blue-700'
+          >
             Read More
           </button>
         </div>

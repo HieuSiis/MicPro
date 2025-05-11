@@ -64,7 +64,8 @@ const GrowFaster = () => {
                 </div>
                 <button
                   type='button'
-                  className='rounded-sm bg-blue-600 px-[5px] py-[2px] text-[9px] text-white sm:text-xs '>
+                  className='rounded-sm bg-blue-600 px-[5px] py-[2px] text-[9px] text-white sm:text-xs '
+                >
                   Buy now
                 </button>
               </div>
@@ -88,7 +89,8 @@ const GrowFaster = () => {
                 </div>
                 <button
                   type='button'
-                  className='ml-7 rounded-sm bg-blue-600 px-[5px] py-[2px] text-[9px] text-white sm:text-xs'>
+                  className='ml-7 rounded-sm bg-blue-600 px-[5px] py-[2px] text-[9px] text-white sm:text-xs'
+                >
                   Buy now
                 </button>
               </div>
@@ -104,7 +106,8 @@ const GrowFaster = () => {
               </div>
               <button
                 type='button'
-                className='mx-auto mt-4 w-full rounded-sm bg-blue-600 px-4 py-1 text-[9px] text-white sm:text-xs'>
+                className='mx-auto mt-4 w-full rounded-sm bg-blue-600 px-4 py-1 text-[9px] text-white sm:text-xs'
+              >
                 Special Offer
               </button>
             </div>

@@ -14,14 +14,15 @@ const SliderComponent = () => {
           .map((item, index) => (
             <div
               key={index}
-              className='rounded-[20px] bg-gradientCarousel px-6 py-[30px] sm:p-[70px]'>
+              className='rounded-[20px] bg-gradientCarousel px-6 py-[30px] sm:p-[70px]'
+            >
               <h3 className='mx-auto mb-[26px] text-center font-sora text-xl font-bold text-white sm:mb-[60px] sm:text-[34px]'>
                 CUSTOMER STORY
               </h3>
               <div className='flex flex-col-reverse gap-6 sm:flex-row sm:gap-[188px]'>
                 <h4 className='max-w-[591px] font-sora text-lg font-bold text-white sm:text-[28px]'>
-                  &quot;We used Backstage to organize our second anniversary. It helped us gather more
-                  than 450 guests to celebrate this event with us.&quot;
+                  &quot;We used Backstage to organize our second anniversary. It helped us gather
+                  more than 450 guests to celebrate this event with us.&quot;
                 </h4>
                 <div className='flex gap-[87px]'>
                   <div className='flex justify-center gap-1 sm:hidden'>

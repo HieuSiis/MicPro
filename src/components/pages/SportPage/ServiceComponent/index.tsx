@@ -51,7 +51,8 @@ const ServiceComponent = () => {
             </p>
             <button
               type='button'
-              className='mt-4 flex justify-center gap-1 font-inter text-base font-semibold'>
+              className='mt-4 flex justify-center gap-1 font-inter text-base font-semibold'
+            >
               Learn More <img src={IArrow} alt='' />
             </button>
           </div>

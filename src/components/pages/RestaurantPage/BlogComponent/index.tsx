@@ -43,7 +43,8 @@ const BlogComponent = () => {
           </p>
           <button
             type='button'
-            className=' mx-auto mt-6 flex justify-center rounded-lg bg-primary px-11 py-[18px] text-white sm:mx-0 sm:mt-11'>
+            className=' mx-auto mt-6 flex justify-center rounded-lg bg-primary px-11 py-[18px] text-white sm:mx-0 sm:mt-11'
+          >
             Learn More <Image className='ml-[10px]' src={Arrow} alt='' width={24} height={24} />
           </button>
         </div>

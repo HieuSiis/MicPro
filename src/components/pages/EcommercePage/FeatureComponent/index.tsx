@@ -40,7 +40,8 @@ const FeatureComponent = () => {
             </p>
             <button
               type='button'
-              className='rounded-md border bg-white px-9 py-4 font-manrope text-lg font-semibold text-black hover:bg-primary hover:text-white'>
+              className='rounded-md border bg-white px-9 py-4 font-manrope text-lg font-semibold text-black hover:bg-primary hover:text-white'
+            >
               Learn More
             </button>
           </div>

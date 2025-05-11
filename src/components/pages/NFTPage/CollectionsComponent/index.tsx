@@ -68,7 +68,8 @@ const CollectionsComponent = () => {
                 <Image src={item.img} alt='NFT Image' className='h-[330px] w-[330px] rounded-xl' />
                 <button
                   type='button'
-                  className='absolute right-4 top-4 rounded-full bg-white p-[12px] shadow-md'>
+                  className='absolute right-4 top-4 rounded-full bg-white p-[12px] shadow-md'
+                >
                   {item.favorite ? <img src={HeartRed} alt='' /> : <img src={HeartGray} alt='' />}
                 </button>
               </div>

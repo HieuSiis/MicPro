@@ -39,6 +39,7 @@ const InputForm = () => {
       <div className='flex flex-col gap-5 sm:gap-[50px]'>
         {items.map((item, index) => (
           <div
+            key={index}
             className={`flex flex-col-reverse items-center sm:flex-row ${item.bgCard} rounded-xl px-10 py-8 odd:gap-[30px] even:gap-[30px] sm:odd:gap-12 sm:even:flex-row-reverse sm:even:gap-[72px]`}
           >
             <div className='flex'>

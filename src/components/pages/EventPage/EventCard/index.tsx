@@ -42,7 +42,8 @@ const EventCard = () => {
             </p>
             <button
               type='button'
-              className='mb-4 rounded-full bg-white px-[50px] py-3 font-poppins text-base font-medium text-primary'>
+              className='mb-4 rounded-full bg-white px-[50px] py-3 font-poppins text-base font-medium text-primary'
+            >
               Get Ticket
             </button>
 

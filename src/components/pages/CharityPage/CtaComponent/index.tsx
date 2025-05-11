@@ -17,8 +17,8 @@ const CtaComponent = () => {
             Become a Volunteer of our charity
           </h2>
           <p className='max-w-[267px] font-poppins text-[16px] font-normal opacity-70 sm:max-w-[486px]'>
-            We believe your project is only as good as the team that&apos;s working on it. When we work
-            with you and your team, we know there are no shortcuts to success. Your research is
+            We believe your project is only as good as the team that&apos;s working on it. When we
+            work with you and your team, we know there are no shortcuts to success. Your research is
             done; now lets get down to business!
           </p>
           <ArrowButton className='mx-auto mt-6 sm:mx-0 sm:mt-11'>Join the team</ArrowButton>

@@ -8,7 +8,8 @@ const CtaComponent = () => {
       </h2>
       <button
         type='button'
-        className='rounded-[10px] bg-white p-4 font-poppins text-lg font-semibold text-black transition hover:bg-gray-100'>
+        className='rounded-[10px] bg-white p-4 font-poppins text-lg font-semibold text-black transition hover:bg-gray-100'
+      >
         Get Started for free
       </button>
       <p className='mt-[14px] font-poppins text-base font-thin text-white'>

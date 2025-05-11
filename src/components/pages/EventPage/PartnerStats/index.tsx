@@ -45,7 +45,8 @@ const PartnerStats = () => {
           {stats.map((item, index) => (
             <div
               key={index}
-              className='rounded-2xl border border-slate-100 px-11 py-[30px] hover:shadow-md'>
+              className='rounded-2xl border border-slate-100 px-11 py-[30px] hover:shadow-md'
+            >
               <div
                 className={`mb-5 flex h-20 w-20 items-center justify-center rounded-[10px] ${item.bgIcon}`}
               >

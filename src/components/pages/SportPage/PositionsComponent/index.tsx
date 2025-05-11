@@ -82,7 +82,8 @@ const PositionsComponent = () => {
           {boxesRight.map((item, index) => (
             <div
               key={index}
-              className={`${item.bgBox} max-w-[370px] rounded-lg p-6 text-left shadow-sm`}>
+              className={`${item.bgBox} max-w-[370px] rounded-lg p-6 text-left shadow-sm`}
+            >
               <h3 className={`${item.colorTitle} mb-3 font-sora text-xl font-semibold`}>
                 {item.title}
               </h3>

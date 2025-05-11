@@ -154,7 +154,8 @@ const MarketPlace = () => {
               />
               <button
                 type='button'
-                className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-neutral-800 bg-opacity-90 px-[30px] py-[10px] font-poppins text-[16px] font-medium text-white opacity-0 transition group-hover:opacity-100'>
+                className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-neutral-800 bg-opacity-90 px-[30px] py-[10px] font-poppins text-[16px] font-medium text-white opacity-0 transition group-hover:opacity-100'
+              >
                 View Now
               </button>
               <div className='absolute bottom-[22px] left-[18px] flex -space-x-2'>
