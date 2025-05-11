@@ -1,4 +1,4 @@
-export { default as Slack } from './Slack.svg'
+export { default as Slack } from './slack.svg'
 export { default as Amazon } from './Amazon.svg'
 export { default as Woo } from './Woo.svg'
 export { default as MeUndies } from './MeUndies.svg'
