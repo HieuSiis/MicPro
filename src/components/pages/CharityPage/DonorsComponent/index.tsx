@@ -52,7 +52,7 @@ const DonorsComponent = () => {
         {donors.map((item, index) => (
           <div
             key={index}
-            className='flex h-[100px] w-[327px] items-center justify-between rounded-xl border border-grayD9 p-6 hover:bg-white hover:shadow-md sm:w-[370px] '
+            className='flex h-[100px] w-[327px] items-center justify-between rounded-xl border border-grayD9 p-6 hover:bg-white hover:shadow-md transition-all duration-500 sm:w-[370px] '
           >
             <Image src={item.avatar} alt='' width={60} height={60} className='rounded-full' />
 

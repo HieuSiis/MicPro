@@ -44,7 +44,7 @@ const CompaniesComponent = () => {
           {cards.map((item, index) => (
             <div
               key={index}
-              className='rounded-xl border border-grayF2 bg-white p-8 hover:shadow-md'
+              className='rounded-xl border border-grayF2 bg-white p-8 hover:shadow-md transition-all duration-300 cursor-pointer'
             >
               <div
                 className={`mb-8 h-[88px] w-[88px] rounded-full ${item.bgIcon} flex items-center justify-center`}

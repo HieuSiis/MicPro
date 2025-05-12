@@ -83,7 +83,7 @@ const Header = () => {
         {/* Desktop menu */}
         <ul className='hidden items-center justify-center gap-3 xl:flex'>
           {menuLinks.map((item) => (
-            <li key={item.name} className='relative rounded-full px-3 py-3 hover:bg-blue-200'>
+            <li key={item.name} className='relative rounded-full px-3 py-3 hover:bg-blue-200 transition-all duration-500'>
               <Link href={item.path} className='flex items-center gap-2 text-sm font-medium'>
                 {item.name}
                 {(item.name === 'Services' ||
