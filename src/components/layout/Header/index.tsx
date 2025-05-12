@@ -53,7 +53,7 @@ const Header = () => {
       <div className='l-container flex items-center justify-between'>
         <Link
           href='/'
-          className='flex items-center gap-2.5 font-sora text-lg font-semibold sm:text-xl'
+          className='flex items-center gap-2.5 font-sora text-lg font-semibold xl:text-xl'
         >
           <Image src={Logo} alt='MicPro' width={36} height={36} />
           <span>MicPro</span>
@@ -81,7 +81,7 @@ const Header = () => {
         </button>
 
         {/* Desktop menu */}
-        <ul className='hidden items-center justify-center gap-3 sm:flex'>
+        <ul className='hidden items-center justify-center gap-3 xl:flex'>
           {menuLinks.map((item) => (
             <li key={item.name} className='relative rounded-full px-3 py-3 hover:bg-blue-200'>
               <Link href={item.path} className='flex items-center gap-2 text-sm font-medium'>
@@ -89,8 +89,8 @@ const Header = () => {
                 {(item.name === 'Services' ||
                   item.name === 'Expertise' ||
                   item.name === 'Company') && (
-                  <Image src={Dropdown} alt='Dropdown' width={24} height={24} />
-                )}
+                    <Image src={Dropdown} alt='Dropdown' width={24} height={24} />
+                  )}
               </Link>
             </li>
           ))}
@@ -99,7 +99,7 @@ const Header = () => {
         {/* Desktop Button */}
         <button
           type='button'
-          className='hidden rounded-full bg-blue-600 px-[50px] py-[18px] font-medium leading-normal text-white sm:block'
+          className='hidden rounded-full bg-blue-600 px-[50px] py-[18px] font-medium leading-normal text-white xl:block'
         >
           Start a Project
         </button>
@@ -124,9 +124,8 @@ const Header = () => {
                   <li key={item.name}>
                     <Link
                       href={item.path}
-                      className={`flex items-center gap-3 rounded-md px-3 py-1 text-base transition-colors duration-200 ${
-                        isActive ? 'bg-blue-100 font-semibold text-blue-600' : 'text-gray-700'
-                      }`}
+                      className={`flex items-center gap-3 rounded-md px-3 py-1 text-base transition-colors duration-200 ${isActive ? 'bg-blue-100 font-semibold text-blue-600' : 'text-gray-700'
+                        }`}
                     >
                       <Image src={item.icon} alt='' width={20} height={20} />
                       {item.name}
