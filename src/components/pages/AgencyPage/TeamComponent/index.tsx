@@ -64,7 +64,7 @@ const TeamComponent = () => {
         <div className='mx-auto grid max-w-[1075px] grid-cols-1 gap-12 sm:grid-cols-3'>
           {teams.map((item, index) => (
             <div key={index} className='group relative h-[385px] w-full rounded-full'>
-              <div className='overlay invisible absolute inset-0 z-10 flex flex-col items-center justify-center rounded-full bg-primary bg-opacity-80 p-2 text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100'>
+              <div className='overlay invisible absolute inset-0 z-10 flex flex-col items-center justify-center rounded-full bg-primary bg-opacity-80 p-2 text-white opacity-0 transition-all duration-500 group-hover:visible group-hover:opacity-100'>
                 <h4 className='font-poppins text-xl font-semibold'>{item.name}</h4>
                 <p className='text-sm'>{item.role}</p>
                 <div className='mt-5 flex space-x-2'>
