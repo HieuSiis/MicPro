@@ -113,7 +113,7 @@ const Footer = () => {
           <span>Products</span>
           <span>Resources</span>
         </div>
-        <div className='text-center text-sm'>&copy; 2021 Besnik.com | All Rights Reserved</div>
+        <div className='text-center text-sm'>&copy; 2025 Besnik.com | All Rights Reserved</div>
         <div className='hidden space-x-4 lg:flex'>
           {socialMedia.map((item, index) => (
             <img key={index} src={item} alt='Facebook' />
